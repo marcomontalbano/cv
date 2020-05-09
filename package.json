@@ -9,7 +9,7 @@
     "serve": "sirv build --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
     "postbuild:cv": "cp -r ./src/static/admin ./dist/"
@@ -41,16 +41,32 @@
   "eslintIgnore": [
     "build/*"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "engines": {
+    "node": ">=12"
+  },
   "devDependencies": {
     "@types/html-pdf": "~2.2.0",
+    "@types/jest": "~25.2.1",
+    "@types/mock-fs": "~4.10.0",
     "@types/node": "~13.13.5",
+    "@types/pluralize": "0.0.29",
     "eslint": "^7.0.0",
     "eslint-config-synacor": "^3.0.5",
     "html-pdf": "~2.2.0",
+    "husky": "~4.2.5",
+    "jest": "~25.5.4",
+    "mock-fs": "~4.12.0",
     "node-sass": "~4.14.1",
+    "pluralize": "~8.0.0",
     "preact-cli": "^3.0.0-rc.9",
     "sass-loader": "~8.0.2",
     "sirv-cli": "^0.4.5",
+    "ts-jest": "~25.5.1",
     "ts-node": "~8.10.1",
     "typescript": "~3.8.3"
   },
