@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Preact CLI
+node_modules
+/build
+/*.log
+/size-plugin.json
