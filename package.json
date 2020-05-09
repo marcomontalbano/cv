@@ -9,7 +9,9 @@
     "serve": "sirv build --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild:cv": "npm run build",
+    "build:cv": "ts-node ./scripts/create-pdf.ts"
   },
   "repository": {
     "type": "git",
@@ -39,12 +41,16 @@
     "build/*"
   ],
   "devDependencies": {
+    "@types/html-pdf": "~2.2.0",
+    "@types/node": "~13.13.5",
     "eslint": "^7.0.0",
     "eslint-config-synacor": "^3.0.5",
+    "html-pdf": "~2.2.0",
     "node-sass": "~4.14.1",
     "preact-cli": "^3.0.0-rc.9",
     "sass-loader": "~8.0.2",
     "sirv-cli": "^0.4.5",
+    "ts-node": "~8.10.1",
     "typescript": "~3.8.3"
   },
   "dependencies": {
