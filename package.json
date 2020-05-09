@@ -11,7 +11,8 @@
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild:cv": "npm run build",
-    "build:cv": "ts-node ./scripts/create-pdf.ts"
+    "build:cv": "ts-node ./scripts/create-pdf.ts",
+    "postbuild:cv": "cp -r ./src/static/admin ./dist/"
   },
   "repository": {
     "type": "git",
