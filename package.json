@@ -8,7 +8,7 @@
     "build": "preact build",
     "serve": "sirv build --cors --single",
     "dev": "preact watch",
-    "lint": "eslint src",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
@@ -25,19 +25,6 @@
     "url": "https://github.com/marcomontalbano/curriculum/issues"
   },
   "homepage": "https://github.com/marcomontalbano/curriculum#readme",
-  "eslintConfig": {
-    "extends": "eslint-config-synacor",
-    "rules": {
-      "indent": [
-        "error",
-        4
-      ],
-      "react/jsx-indent-props": [
-        "error",
-        4
-      ]
-    }
-  },
   "eslintIgnore": [
     "build/*"
   ],
@@ -55,15 +42,19 @@
     "@types/mock-fs": "~4.10.0",
     "@types/node": "~13.13.5",
     "@types/pluralize": "0.0.29",
+    "@typescript-eslint/eslint-plugin": "~2.31.0",
+    "@typescript-eslint/parser": "~2.31.0",
     "eslint": "^7.0.0",
-    "eslint-config-synacor": "^3.0.5",
+    "eslint-plugin-react": "~7.19.0",
     "html-pdf": "~2.2.0",
     "husky": "~4.2.5",
     "jest": "~25.5.4",
+    "lint-staged": "~10.2.2",
     "mock-fs": "~4.12.0",
     "node-sass": "~4.14.1",
     "pluralize": "~8.0.0",
     "preact-cli": "^3.0.0-rc.9",
+    "prettier": "~2.0.5",
     "sass-loader": "~8.0.2",
     "sirv-cli": "^0.4.5",
     "ts-jest": "~25.5.1",
