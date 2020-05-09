@@ -5,14 +5,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "preact build",
+    "postinstall": "npm run build:typescriptDefinition",
+    "prebuild": "run-s build:prerenderUrls build:typescriptDefinition",
+    "build": "preact build --prerenderUrls ./prerender-urls/prerender-urls.js",
     "serve": "sirv build --cors --single",
-    "dev": "preact watch",
+    "predev": "run-s build:prerenderUrls build:typescriptDefinition",
+    "dev": "preact watch --prerenderUrls ./prerender-urls/prerender-urls.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
-    "postbuild:cv": "cp -r ./src/static/admin ./dist/"
+    "postbuild:cv": "cp -r ./src/static/admin ./dist/",
+    "build:prerenderUrls": "tsc --build tsconfig.prerender-urls.json",
+    "build:typescriptDefinition": "ts-node ./scripts/create-tsd.ts"
   },
   "repository": {
     "type": "git",
@@ -26,11 +31,13 @@
   },
   "homepage": "https://github.com/marcomontalbano/curriculum#readme",
   "eslintIgnore": [
-    "build/*"
+    "build/*",
+    "prerender-urls/*",
+    "dist/*"
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "engines": {
@@ -49,6 +56,7 @@
     "html-pdf": "~2.2.0",
     "husky": "~4.2.5",
     "jest": "~25.5.4",
+    "json-ts": "~1.6.4",
     "lint-staged": "~10.2.2",
     "mock-fs": "~4.12.0",
     "node-sass": "~4.14.1",
@@ -62,6 +70,7 @@
     "typescript": "~3.8.3"
   },
   "dependencies": {
+    "npm-run-all": "~4.1.5",
     "preact": "^10.4.1",
     "preact-render-to-string": "^5.1.8"
   }

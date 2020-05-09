@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES5",
-        "module": "commonjs",
+        "module": "CommonJS",
         "allowJs": true,
         "jsx": "react",
         "jsxFactory": "h",
@@ -9,8 +9,9 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "lib": [
-            "ESNext"
+            "ESNext",
+            "DOM"
         ]
     },
-    "include": ["scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"]
+    "include": ["global.d.ts", "scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"]
 }

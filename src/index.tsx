@@ -4,6 +4,19 @@ import App from './components/App';
 
 import './style.scss';
 
-const Root = (): h.JSX.Element => <App />;
+type PreRenderData = {
+    CLI_DATA: {
+        preRenderData: {
+            url: string;
+            data: NetlifyCMSContent;
+        };
+    };
+};
+
+const Root = ({
+    CLI_DATA: {
+        preRenderData: { url, data },
+    },
+}: PreRenderData): h.JSX.Element => <App url={url} data={data} />;
 
 export default Root;
