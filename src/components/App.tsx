@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import WorkExperiences from './WorkExperiences';
 
 type Props = {
     url: string;
@@ -8,9 +9,7 @@ type Props = {
 const App = ({ data }: Props): h.JSX.Element => (
     <div>
         <h1>Hello, World!</h1>
-        {data.companies.map((company) => (
-            <div key={company.id}>{company.name}</div>
-        ))}
+        <WorkExperiences experiences={data.experiences} />
     </div>
 );
 

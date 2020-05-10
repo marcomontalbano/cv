@@ -12,7 +12,7 @@
     "predev": "run-s build:prerenderUrls build:typescriptDefinition",
     "dev": "preact watch --prerenderUrls ./prerender-urls/prerender-urls.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "jest",
+    "test": "jest --coverage",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
     "postbuild:cv": "cp -r ./src/static/admin ./dist/",
@@ -44,11 +44,13 @@
     "node": ">=12"
   },
   "devDependencies": {
+    "@testing-library/preact": "~1.0.2",
     "@types/html-pdf": "~2.2.0",
     "@types/jest": "~25.2.1",
     "@types/mock-fs": "~4.10.0",
     "@types/node": "~13.13.5",
     "@types/pluralize": "0.0.29",
+    "@types/showdown": "~1.9.3",
     "@typescript-eslint/eslint-plugin": "~2.31.0",
     "@typescript-eslint/parser": "~2.31.0",
     "eslint": "^7.0.0",
@@ -72,6 +74,7 @@
   "dependencies": {
     "npm-run-all": "~4.1.5",
     "preact": "^10.4.1",
-    "preact-render-to-string": "^5.1.8"
+    "preact-render-to-string": "^5.1.8",
+    "showdown": "~1.9.1"
   }
 }
