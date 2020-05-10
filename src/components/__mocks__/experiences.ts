@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     asList: [
         {
             endDate: '2016-06-30',
