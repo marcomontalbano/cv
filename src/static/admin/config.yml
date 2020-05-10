@@ -66,3 +66,58 @@ collections:
         name: "description"
         widget: "markdown"
 
+  - name: "courses" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    label: "Course" # Used in the UI
+    folder: "content/courses" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - latel: "ID"
+        name: "id"
+        widget: "uuid"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Visible"
+        name: "visible"
+        widget: "boolean"
+        default: true
+      - label: "Picture"
+        required: false
+        name: "picture"
+        widget: "image"
+      - label: "Attachments"
+        required: false
+        name: "attachments"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
+      - label: "Company"
+        name: "companyId"
+        widget: "relation"
+        collection: "companies"
+        searchFields: ["name", "address"]
+        valueField: "id"
+        displayFields: ["name"]
+      - label: "Start Date"
+        name: "startDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "End Date"
+        required: false 
+        name: "endDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "Duration"
+        required: false 
+        name: "duration"
+        widget: "string"
+      - label: "Url"
+        required: false
+        name: "url"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
