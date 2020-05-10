@@ -4,7 +4,7 @@ import Section from './Section';
 import Markdown from './Markdown';
 
 type Props = {
-    items: ExperiencesItem[];
+    items: (ExperiencesItem | CoursesItem)[];
     title?: string;
 };
 
@@ -28,7 +28,7 @@ const renderDate = (startDate: string, endDate: string): h.JSX.Element => {
 
 const renderCompany = ({ name, address }: CompaniesItem): string => (address ? `${name}, ${address}` : name);
 
-const renderItem = (item: ExperiencesItem): h.JSX.Element | false =>
+const renderItem = (item: ExperiencesItem | CoursesItem): h.JSX.Element | false =>
     item.visible && (
         <Section sidebar={renderDate(item.startDate, item.endDate)}>
             <div className="title">{item.title}</div>

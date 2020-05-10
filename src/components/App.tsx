@@ -9,6 +9,7 @@ type Props = {
 const App = ({ data }: Props): h.JSX.Element => (
     <div className="container">
         <ItemsWithCompany items={data.experiences} title="Work Experiences" />
+        <ItemsWithCompany items={data.courses} title="Courses" />
     </div>
 );
 
