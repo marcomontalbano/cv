@@ -4,7 +4,8 @@ import Section from './Section';
 import Markdown from './Markdown';
 
 type Props = {
-    experiences: ExperiencesItem[];
+    items: ExperiencesItem[];
+    title?: string;
 };
 
 const formatDate = (date: string): string => format(new Date(date), 'MMMM yyyy');
@@ -27,22 +28,22 @@ const renderDate = (startDate: string, endDate: string): h.JSX.Element => {
 
 const renderCompany = ({ name, address }: CompaniesItem): string => (address ? `${name}, ${address}` : name);
 
-const renderExperience = (experience: ExperiencesItem): h.JSX.Element | false =>
-    experience.visible && (
-        <Section sidebar={renderDate(experience.startDate, experience.endDate)}>
-            <div className="title">{experience.title}</div>
-            <div>{renderCompany(experience.company)}</div>
+const renderItem = (item: ExperiencesItem): h.JSX.Element | false =>
+    item.visible && (
+        <Section sidebar={renderDate(item.startDate, item.endDate)}>
+            <div className="title">{item.title}</div>
+            <div>{renderCompany(item.company)}</div>
             <div>
-                <Markdown markdown={experience.description} />
+                <Markdown markdown={item.description} />
             </div>
         </Section>
     );
 
-const WorkExperiences = ({ experiences }: Props): h.JSX.Element => (
+const ItemsWithCompany = ({ items, title = '' }: Props): h.JSX.Element => (
     <Fragment>
-        <Section sidebarHasTitle sidebar="Work Experiences" />
-        {experiences.map((experience) => renderExperience(experience))}
+        <Section sidebarHasTitle sidebar={title} />
+        {items.map((item) => renderItem(item))}
     </Fragment>
 );
 
-export default WorkExperiences;
+export default ItemsWithCompany;

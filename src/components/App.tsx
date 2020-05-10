@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import WorkExperiences from './WorkExperiences';
+import ItemsWithCompany from './ItemsWithCompany';
 
 type Props = {
     url: string;
@@ -8,7 +8,7 @@ type Props = {
 
 const App = ({ data }: Props): h.JSX.Element => (
     <div className="container">
-        <WorkExperiences experiences={data.experiences} />
+        <ItemsWithCompany items={data.experiences} title="Work Experiences" />
     </div>
 );
 
