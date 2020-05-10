@@ -15,6 +15,16 @@ describe('WorkExperiences', () => {
         expect(queryByText('October 2017')).toBeDefined();
     });
 
+    it('should not render the experience if not visible', () => {
+        const { queryByText, getAllByText } = render(<WorkExperiences experiences={experiences.withoutVisibleFalse} />);
+        expect(getAllByText('John Doe SpA, Binasco, Milan (Italy)').length).toEqual(1);
+        expect(queryByText('present day')).toBeNull();
+        expect(queryByText('May 2016')).toBeNull();
+        expect(queryByText('June 2016')).toBeNull();
+        expect(queryByText('September 2017')).toBeDefined();
+        expect(queryByText('October 2017')).toBeDefined();
+    });
+
     it('should not render the endDate if equal to startDate render a list of experiences', () => {
         const { queryByText, getAllByText } = render(<WorkExperiences experiences={experiences.withSameMonth} />);
         expect(getAllByText('John Doe SpA, Binasco, Milan (Italy)').length).toEqual(1);
