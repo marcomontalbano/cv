@@ -1,8 +1,88 @@
-html, body {
-    font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
+$palette-1: #559cd0;
+$palette-2: #223a48;
+$palette-3: #ffffff;
+
+body {
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.55em;
+    color: $palette-2;
+
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
+@media print {
+    body {
+        font-size: 6pt;
+    }
+}
+
+a,
+a:link,
+a:hover {
+    color: $palette-2;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+big {
+    font-size: 1.2em;
+}
+
+@page {
+    size: A4 portrait;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 4px;
+    &:last-child {
+        margin: 0;
+    }
+}
+
+ul {
+    list-style: square;
+    padding-left: 1.7em;
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+
+    .sidebar,
+    .content {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .sidebar {
+        text-align: right;
+        padding-right: 20px;
+        color: $palette-1;
+        width: 25%;
+
+        &.title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    .content {
+        width: 75%;
+        .title {
+            font-size: 1.2em;
+            margin-bottom: 2px;
+        }
+    }
+
+    .title {
+        color: $palette-1;
+    }
 }

@@ -7,8 +7,7 @@ type Props = {
 };
 
 const App = ({ data }: Props): h.JSX.Element => (
-    <div>
-        <h1>Hello, World!</h1>
+    <div className="container">
         <WorkExperiences experiences={data.experiences} />
     </div>
 );
