@@ -11,6 +11,7 @@ describe('netlify-cms', () => {
             },
             '/contentPath/experiences': {
                 'experience-1.json': JSON.stringify({ id: '1', name: 'Experience 1', companyId: '2' }),
+                'experience-2.json': JSON.stringify({ id: '2', name: 'Experience 2', companyId: ['1', '2'] }),
             },
         });
     });
@@ -27,7 +28,17 @@ describe('netlify-cms', () => {
                 { id: '1', name: 'Company 1' },
                 { id: '2', name: 'Company 2' },
             ],
-            experiences: [{ id: '1', name: 'Experience 1', company: { id: '2', name: 'Company 2' } }],
+            experiences: [
+                { id: '1', name: 'Experience 1', company: { id: '2', name: 'Company 2' } },
+                {
+                    id: '2',
+                    name: 'Experience 2',
+                    companies: [
+                        { id: '1', name: 'Company 1' },
+                        { id: '2', name: 'Company 2' },
+                    ],
+                },
+            ],
         });
     });
 });
