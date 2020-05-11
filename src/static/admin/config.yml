@@ -158,3 +158,27 @@ collections:
           - label: "Position"
             name: "position"
             widget: "string"
+
+      - name: "skill"
+        label: "Skill"
+        file: "content/skill.json"
+        fields:
+          - latel: "ID"
+            name: "id"
+            widget: "uuid"
+          - label: "Native language"
+            name: "nativeLanguage"
+            widget: "list"
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Listening", name: "listening", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Reading", name: "reading", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Spoken Interaction", name: "spokenInteraction", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Spoken Production", name: "spokenProduction", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Writing", name: "writing", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+          - label: "Driving license"
+            name: "drivingLicense"
+            widget: "list"
