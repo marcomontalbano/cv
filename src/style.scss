@@ -71,6 +71,20 @@ h1 {
     margin-top: 0;
 }
 
+table {
+    width: 100%;
+
+    thead,
+    .col-title {
+        color: $palette-1;
+    }
+
+    .col-title {
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
 .section {
     margin-bottom: 10px;
     page-break-inside: avoid;

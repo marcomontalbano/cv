@@ -3,7 +3,7 @@ import { h } from 'preact';
 type Props = {
     sidebarHasTitle?: boolean;
     sidebar?: h.JSX.Element | string;
-    children?: h.JSX.Element | h.JSX.Element[];
+    children?: string | h.JSX.Element | h.JSX.Element[];
 };
 
 const Section = ({ sidebarHasTitle = false, sidebar, children }: Props): h.JSX.Element => {
