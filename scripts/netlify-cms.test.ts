@@ -13,6 +13,7 @@ describe('netlify-cms', () => {
                 'experience-1.json': JSON.stringify({ id: '1', name: 'Experience 1', companyId: '2' }),
                 'experience-2.json': JSON.stringify({ id: '2', name: 'Experience 2', companyId: ['1', '2'] }),
             },
+            '/contentPath/profile.json': JSON.stringify({ id: '1', fullname: 'John Doe', companyId: '1' }),
         });
     });
 
@@ -39,6 +40,7 @@ describe('netlify-cms', () => {
                     ],
                 },
             ],
+            profile: { id: '1', fullname: 'John Doe', company: { id: '1', name: 'Company 1' } },
         });
     });
 });

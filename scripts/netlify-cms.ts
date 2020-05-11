@@ -2,39 +2,49 @@ import path from 'path';
 import fs from 'fs';
 import pluralize from 'pluralize';
 
-type Collection = {
-    [key: string]: unknown;
+type Content = {
+    [collectionName: string]: Collections;
 };
 
-type Collections = Collection[];
+type Collections = Collection[] | Collection;
 
-type ParseCollection = (collectionPath: string) => Collections;
-
-type GetContent = (contentPath: string) => Content;
-
-type ResolveRelations = (contentEntries: ContentEntries) => ContentEntries;
-type ResolveCollectionRelations = (contentEntries: ContentEntries, collection: Collection) => Collection;
-
-type Content = {
-    [collection: string]: Collections;
+type Collection = {
+    [key: string]: unknown;
 };
 
 type ContentEntries = [string, Collections][];
 
 const readdirSync = (root: string): string[] => fs.readdirSync(root).map((basename) => path.resolve(root, basename));
 
-const parseCollection: ParseCollection = (collectionPath) =>
-    readdirSync(collectionPath).map((file) => JSON.parse(fs.readFileSync(file, 'utf8')));
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const readFileAsJson = (file: string): any => JSON.parse(fs.readFileSync(file, 'utf8'));
+
+const parseCollection = (collectionPath: string): Collections =>
+    readdirSync(collectionPath).map((file) => readFileAsJson(file));
 
 const foreignKeySuffix = 'Id';
 
-const findItem = (content: Content, collectionName: string, id: string): Collection | undefined =>
-    content[collectionName].find((item) => item.id === id);
+const findItem = (content: Content, collectionName: string, id: string): Collection | undefined => {
+    const collections = content[collectionName];
 
-const findItems = (content: Content, collectionName: string, ids: string[] = []): Collections =>
-    content[collectionName].filter((item) => typeof item.id === 'string' && ids.includes(item.id));
+    if (!Array.isArray(collections)) {
+        return collections;
+    }
 
-const resolveCollectionRelations: ResolveCollectionRelations = (contentEntries, collection) => {
+    return collections.find((item) => item.id === id);
+};
+
+const findItems = (content: Content, collectionName: string, ids: string[] = []): Collections => {
+    const collections = content[collectionName];
+
+    if (!Array.isArray(collections)) {
+        return collections;
+    }
+
+    return collections.filter((item) => typeof item.id === 'string' && ids.includes(item.id));
+};
+
+const resolveCollectionRelations = (contentEntries: ContentEntries, collection: Collection): Collection => {
     const itemEntries = Object.entries(collection).map(([key, value]) => {
         const [, relationSingular] = new RegExp(`([\\S]+)${foreignKeySuffix}$`).exec(key) || [];
 
@@ -57,17 +67,22 @@ const resolveCollectionRelations: ResolveCollectionRelations = (contentEntries, 
     return Object.fromEntries(itemEntries);
 };
 
-const resolveRelations: ResolveRelations = (contentEntries) =>
+const resolveRelations = (contentEntries: ContentEntries): ContentEntries =>
     contentEntries.map(([name, collections]) => [
         name,
-        collections.map((collection) => resolveCollectionRelations(contentEntries, collection)),
+        Array.isArray(collections)
+            ? collections.map((collection) => resolveCollectionRelations(contentEntries, collection))
+            : resolveCollectionRelations(contentEntries, collections),
     ]);
 
-const getContent: GetContent = (contentPath) => {
-    const contentEntries: ContentEntries = readdirSync(contentPath).map((folder) => [
-        path.basename(folder),
-        parseCollection(folder),
-    ]);
+const getContent = (contentPath: string): Content => {
+    const contentEntries: ContentEntries = readdirSync(contentPath).map((filepath) => {
+        if (fs.lstatSync(filepath).isFile()) {
+            return [path.basename(filepath, '.json'), readFileAsJson(filepath)];
+        }
+
+        return [path.basename(filepath), parseCollection(filepath)];
+    });
 
     return Object.fromEntries(resolveRelations(contentEntries));
 };
