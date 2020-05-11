@@ -16,7 +16,7 @@
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
     "postbuild:cv": "cp -r ./src/static/admin ./dist/",
-    "build:prerenderUrls": "tsc --build tsconfig.prerender-urls.json",
+    "build:prerenderUrls": "rimraf ./prerender-urls/ && tsc --build tsconfig.prerender-urls.json",
     "build:typescriptDefinition": "ts-node ./scripts/create-tsd.ts"
   },
   "repository": {
@@ -62,9 +62,11 @@
     "lint-staged": "~10.2.2",
     "mock-fs": "~4.12.0",
     "node-sass": "~4.14.1",
+    "npm-run-all": "~4.1.5",
     "pluralize": "~8.0.0",
     "preact-cli": "^3.0.0-rc.9",
     "prettier": "~2.0.5",
+    "rimraf": "~3.0.2",
     "sass-loader": "~8.0.2",
     "sirv-cli": "^0.4.5",
     "ts-jest": "~25.5.1",
@@ -73,7 +75,6 @@
   },
   "dependencies": {
     "date-fns": "~2.13.0",
-    "npm-run-all": "~4.1.5",
     "preact": "^10.4.1",
     "preact-render-to-string": "^5.1.8",
     "showdown": "~1.9.1"
