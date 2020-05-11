@@ -1,0 +1,19 @@
+{
+  "id": "8cd458d7-46a9-4de9-b698-1a886191a914",
+  "drivingLicense": [
+    "B"
+  ],
+  "nativeLanguage": [
+    "Italian"
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "listening": "B1",
+      "reading": "B2",
+      "spokenInteraction": "B1",
+      "spokenProduction": "B1",
+      "writing": "B1"
+    }
+  ]
+}
