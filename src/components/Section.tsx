@@ -2,7 +2,7 @@ import { h } from 'preact';
 
 type Props = {
     sidebarHasTitle?: boolean;
-    sidebar: h.JSX.Element | string;
+    sidebar?: h.JSX.Element | string;
     children?: h.JSX.Element | h.JSX.Element[];
 };
 
