@@ -182,3 +182,6 @@ collections:
           - label: "Driving license"
             name: "drivingLicense"
             widget: "list"
+          - label: "Skills"
+            name: "skills"
+            widget: "markdown"
