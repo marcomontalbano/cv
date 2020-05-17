@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import sortBy from 'lodash/sortBy';
 import ItemsWithCompany from './ItemsWithCompany';
 import Profile from './Profile';
 import Section from './Section';
@@ -9,11 +10,13 @@ type Props = {
     data: NetlifyCMSContent;
 };
 
+const sort = <T extends {}>(items: T[]): T[] => sortBy(items, 'startDate').reverse();
+
 const App = ({ data }: Props): h.JSX.Element => (
     <div className="container">
         <Profile profile={data.profile} />
-        <ItemsWithCompany items={data.experiences} title="Work Experiences" />
-        <ItemsWithCompany items={data.courses} title="Courses" />
+        <ItemsWithCompany items={sort(data.experiences)} title="Work Experiences" />
+        <ItemsWithCompany items={sort(data.courses)} title="Courses" />
         <Skill skill={data.skill} />
         <Section>
             <div style={{ marginTop: '50px' }}>
