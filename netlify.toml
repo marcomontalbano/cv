@@ -1,7 +1,7 @@
 [build]
-  publish = "dist"
-  command = "npm run build:cv"
+  publish = "src/static"
+  command = ""
 
-[[redirects]]
-  from = "/"
-  to = "/curriculum.pdf"
+# [[redirects]]
+#   from = "/"
+#   to = "/curriculum.pdf"
