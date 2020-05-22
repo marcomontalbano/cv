@@ -5,19 +5,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run build:typescriptDefinition",
-    "prebuild": "run-s build:prerenderUrls build:typescriptDefinition",
+    "prebuild": "run-s build:prerenderUrls",
     "build": "preact build --prerenderUrls ./prerender-urls/prerender-urls.js",
     "serve": "sirv build --cors --single",
-    "predev": "run-s build:prerenderUrls build:typescriptDefinition",
+    "predev": "run-s build:prerenderUrls",
     "dev": "preact watch --prerenderUrls ./prerender-urls/prerender-urls.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest --coverage",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts",
     "postbuild:cv": "cp -r ./src/static/admin ./dist/",
-    "build:prerenderUrls": "rimraf ./prerender-urls/ && tsc --build tsconfig.prerender-urls.json",
-    "build:typescriptDefinition": "ts-node ./scripts/create-tsd.ts"
+    "build:prerenderUrls": "rimraf ./prerender-urls/ && tsc --build tsconfig.prerender-urls.json"
   },
   "repository": {
     "type": "git",
@@ -58,7 +56,6 @@
     "html-pdf": "~2.2.0",
     "husky": "~4.2.5",
     "jest": "~25.5.4",
-    "json-ts": "~1.6.4",
     "lint-staged": "~10.2.2",
     "mock-fs": "~4.12.0",
     "node-sass": "~4.14.1",

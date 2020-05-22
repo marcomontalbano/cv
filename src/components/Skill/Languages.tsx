@@ -2,7 +2,7 @@ import { h, Fragment } from 'preact';
 import Section from '../Section';
 
 type Props = {
-    languages: LanguagesItem[];
+    languages: Language[];
 };
 
 const Languages = ({ languages }: Props): h.JSX.Element => (

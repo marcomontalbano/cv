@@ -13,5 +13,5 @@
             "DOM"
         ]
     },
-    "include": ["global.d.ts", "scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"]
+    "include": ["netlify-cms.d.ts", "scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"]
 }

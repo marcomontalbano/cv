@@ -4,13 +4,13 @@ import Section from './Section';
 import Markdown from './Markdown';
 
 type Props = {
-    items: (ExperiencesItem | CoursesItem)[];
+    items: (Experience | Course)[];
     title?: string;
 };
 
 const formatDate = (date: string): string => format(new Date(date), 'MMMM yyyy');
 
-const renderDate = (startDate: string, endDate: string): h.JSX.Element => {
+const renderDate = (startDate: string, endDate?: string): h.JSX.Element => {
     const formattedStartDate = startDate && formatDate(startDate);
     const formattedEndDate = endDate ? formatDate(endDate) : 'present day';
 
@@ -26,7 +26,7 @@ const renderDate = (startDate: string, endDate: string): h.JSX.Element => {
     );
 };
 
-const renderDuration = ({ duration }: CoursesItem): h.JSX.Element | string => {
+const renderDuration = ({ duration }: Course): h.JSX.Element | string => {
     if (duration) {
         return (
             <span>
@@ -38,14 +38,14 @@ const renderDuration = ({ duration }: CoursesItem): h.JSX.Element | string => {
     return '';
 };
 
-const renderCompany = ({ name, address }: CompaniesItem): string => (address ? `${name}, ${address}` : name);
+const renderCompany = ({ name, address }: Company): string => (address ? `${name}, ${address}` : name);
 
-const renderItem = (item: ExperiencesItem | CoursesItem): h.JSX.Element | false =>
+const renderItem = (item: Experience | Course): h.JSX.Element | false =>
     item.visible && (
         <Section sidebar={renderDate(item.startDate, item.endDate)}>
             <div className="title">
                 {item.title}
-                {renderDuration(item as CoursesItem)}
+                {renderDuration(item as Course)}
             </div>
             <div>{renderCompany(item.company)}</div>
             <div>
