@@ -1,1 +1,35 @@
-# curriculum
+# Curriculum
+
+## Why this repo?
+
+Like always, I love to experiment new stuff and ways of working.
+When I finally had time to revamp my old website I decided to revamp my curriculum as well (of course update the information inside it is another story :joy:).
+
+A curriculum should be a pdf that you can send via email, upload on the company's website to apply for a new position or simply print.
+Instead of using already existing online tools or any word processor, I decided to create a new <u>*website that builds into pdf*</u>.
+
+Yes, you read that right!
+
+I wanted to play with **JAMStack** approach, so why not build and publish a fully static ~~website~~ pdf with every `git push`?
+
+## Development
+
+I'm using [Netlify CMS](https://www.netlifycms.org/) to make instant changes to the pdf. I configured Netlify CMS to store all data in `.json` format inside the `./content` folder.
+
+I created this script `./scripts/netlify-cms.ts` which is able to read all data from json and create a javascript object resolving relations between different collections. This object is then used by [Preact CLI](https://github.com/preactjs/preact-cli) to prerender the data.
+
+Last but not least, I'm using [GitHub Actions](https://github.com/features/actions) to build and publish the pdf. I choose the `macos` image because it makes the pdf text selectable and searchable without any effort.
+
+### Hosting
+
+If you like this approch you can host your own curriculum.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marcomontalbano/video-to-markdown)
+
+After the deploy, you need to enable the Identity feature. You can follow the official documentation "[Setup and settings](https://docs.netlify.com/visitor-access/git-gateway/#setup-and-settings)".
+
+### Available scripts
+
+`npm run dev` starts local development
+
+`npm run build:cv` :sparkles: builds website to pdf
