@@ -1,0 +1,24 @@
+{
+  "endDate": "2014-10-31",
+  "url": "https://www.guccimuseo.com",
+  "startDate": "2013-09-15",
+  "visible": false,
+  "title": "Web Developer for Gucci Museo",
+  "companyId": "38379e88-9042-44c5-8474-e9751a54c197",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "responsive web design",
+    "ruby",
+    "ruby on rails",
+    "test driven development",
+    "rspec",
+    "capistrano",
+    "git",
+    "unit testing"
+  ],
+  "id": "e1edfd0d-59b4-47ce-b308-8a649c66e026",
+  "description": "[www.guccimuseo.com](http://www.guccimuseo.com)\\\nManagement and development of the website serving as a portal to Gucci museum and giving people from around the world the opportunity to explore and discover this museum without needing to visit the physical location in Florence, Italy.\\\nDeveloped using Ruby on Rails.\n\n* Direct communication with the client to take change of all new activities.\n* Team leading.\n* Website developed in RWD (responsive web design).",
+  "picture": "/assets/www.guccimuseo.com.jpg"
+}

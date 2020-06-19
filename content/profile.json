@@ -1,11 +1,11 @@
 {
-  "born_date": "1973-11-06",
-  "position": "Product Developer",
-  "web": "https://example.com",
-  "address": "0012 Douglas Mount Apt. 726 Susannahaven, HI",
-  "fullname": "John Doe",
+  "born_date": "1988-03-15",
+  "position": "Senior Web Engineer",
+  "web": "https://marcomontalbano.com - https://github.com/marcomontalbano",
+  "address": "Binasco, Milan (Italy)",
+  "fullname": "Marco Montalbano",
   "id": "2868e487-3ce7-4eeb-957d-8d276062ee23",
   "nationality": "Italian",
-  "email": "john.doe@example.com",
-  "picture": "/assets/profile-placeholder.jpg"
+  "email": "marcomontalbano.work@gmail.com",
+  "picture": "/assets/profile.jpg"
 }

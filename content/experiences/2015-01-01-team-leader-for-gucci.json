@@ -1,0 +1,22 @@
+{
+  "endDate": "2015-07-17",
+  "url": "https://www.gucci.com",
+  "startDate": "2015-01-01",
+  "visible": false,
+  "title": "Team Leader for Gucci",
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "tags": [
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "e-commerce",
+    "git",
+    "mobile",
+    "responsive web design",
+    "team leader"
+  ],
+  "id": "f3cbf80f-ba0b-4362-bda9-f3e35b8b3678",
+  "description": "[www.gucci.com](http://www.gucci.com)\\\nLeading of a development team and managing of customer relations. Architecture of front-end restyling of the pre-existing e-commerce site. Direct communication with the client to take charge of all new activities.",
+  "picture": "/assets/www.gucci.com-2.jpg"
+}

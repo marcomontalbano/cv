@@ -1,0 +1,23 @@
+{
+  "endDate": "2017-01-05",
+  "url": "https://www.acea.it/myacea/it/login",
+  "startDate": "2016-04-13",
+  "visible": true,
+  "title": "Team Leader for Acea",
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "java",
+    "hybris",
+    "jquery",
+    "responsive web design",
+    "mobile",
+    "team leader",
+    "git"
+  ],
+  "id": "b6116266-608d-4f3f-ae98-5e007c8e9d13",
+  "description": "Acea • <https://www.acea.it/myacea/it/login>\\\nFiora • <https://self-service.fiora.it>\\\nPubliacqua • <https://self-service.publiacqua.it>\\\nTechnical leader of the front-end team developing a new public services portal, working side by side with the SAP Hybris team. This new site allows customers to manage their utility contracts (water, electricity and gas supplies). Customers can activate new services, pay bills and check their payment history.\\\nBeside MyAcea, the main portal, we developed new specific themes for other sub-companies, making up a total of 5 new portals.",
+  "picture": "/assets/www.acea.it.jpg"
+}

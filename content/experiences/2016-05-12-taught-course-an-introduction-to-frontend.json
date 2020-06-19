@@ -1,0 +1,19 @@
+{
+  "endDate": "",
+  "url": "https://github.com/marcomontalbano/an-introduction-to-frontend",
+  "startDate": "2016-05-12",
+  "visible": true,
+  "title": "Taught course: \"An introduction to Frontend\"",
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "jquery",
+    "less",
+    "node.js",
+    "hybris"
+  ],
+  "id": "98d92bdb-98be-413a-b041-56601ee74281",
+  "description": "<https://github.com/marcomontalbano/an-introduction-to-frontend>\\\nIn 2017 I devised and taught this course, meant to be an introduction to frontend for backend developers and interns in Sopra Steria.\n\nTechnologies always improve and I adapt my course accordingly.\n\nThis course now covers HTML, CSS, SCSS and Javascript (ES6) basics, DOM manipulation with Vanilla JS, dependency management with NPM and bundling with Parcel."
+}

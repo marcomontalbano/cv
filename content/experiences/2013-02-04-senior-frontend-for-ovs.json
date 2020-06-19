@@ -1,0 +1,21 @@
+{
+  "endDate": "2013-04-30",
+  "url": "https://www.ovs.it",
+  "startDate": "2013-02-04",
+  "visible": false,
+  "title": "Senior Frontend for OVS",
+  "companyId": "3c7dc502-e5f8-41d7-8f27-8bc7f79ec903",
+  "tags": [
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "demandware",
+    "e-commerce",
+    "subversion",
+    "mobile"
+  ],
+  "id": "5ce0f4a4-e169-4c31-b20c-2a49326f3228",
+  "description": "[www.ovs.it](http://www.ovs.it)\\\nFrontend setup for the development of the e-commerce site using Demandware, HTML 5, CSS 3 and Javascript.",
+  "picture": "/assets/www.ovs.it.jpg"
+}

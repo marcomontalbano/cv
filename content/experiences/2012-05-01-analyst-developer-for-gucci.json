@@ -1,0 +1,26 @@
+{
+  "endDate": "2014-09-18",
+  "url": "https://www.gucci.com",
+  "startDate": "2012-05-01",
+  "visible": false,
+  "title": "Analyst Developer for Gucci",
+  "companyId": "3c7dc502-e5f8-41d7-8f27-8bc7f79ec903",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "mobile",
+    "responsive web design",
+    "ruby",
+    "ruby on rails",
+    "akamai",
+    "rackspace",
+    "e-commerce",
+    "capistrano",
+    "git",
+    "solr"
+  ],
+  "id": "d18c51c5-28b8-468a-bc36-3752be99baa8",
+  "description": "[www.gucci.com](http://www.gucci.com) • [www-m.gucci.com](http://www-m.gucci.com)\\\nDevelopment and maintenance of the e-commerce site and of a customized CMS application, using Ruby on Rails.\\\nThis experience gave me the chance to work with Akamai, Rackspace, Solr and Memcached, technologies which I had never used before.\n\n* Direct communication with both the Italian and American client.\n* Development of the mobile application ​[www-m.gucci.com](http://www-m.gucci.com).\n* Code written as far as possible in TDD (test driven development).",
+  "picture": "/assets/www.gucci.com-1.jpg"
+}

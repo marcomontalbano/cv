@@ -1,0 +1,19 @@
+{
+  "endDate": "",
+  "url": "https://www.virtusbinascocalcio.it/",
+  "startDate": "2008-01-01",
+  "visible": false,
+  "title": "PHP Developer for Virtus Binasco Calcio",
+  "companyId": "fe9bfe19-9d59-43c5-a959-919701acdaa5",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "php",
+    "mysql",
+    "git"
+  ],
+  "id": "8b96a7ae-f315-48b4-a94d-c088b4354bdc",
+  "description": "[www.virtusbinascocalcio.it](http://www.virtusbinascocalcio.it)\\\nFootball website for Virtus Binasco Calcio.\\\nThe customer manages the full championship using a custom CMS built with PHP and MySQL.",
+  "picture": "/assets/www.virtusbinascocalcio.it.jpg"
+}

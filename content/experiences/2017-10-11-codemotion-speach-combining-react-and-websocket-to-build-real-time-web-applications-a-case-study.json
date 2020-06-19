@@ -1,0 +1,17 @@
+{
+  "endDate": "2017-11-11",
+  "url": "https://www.slideshare.net/Codemotion/mmontalbanomcolombo-speronissala-combining-react-and-websocket-to-build-real-time-web-application-a-case-study-codemotion-milan-2017",
+  "startDate": "2017-10-11",
+  "visible": true,
+  "title": "Codemotion speach: \"Combining React and Websocket to build real time web applications: a case study\"",
+  "companyId": "c2e4bf71-b5b2-45b2-8f56-9db191e213d9",
+  "tags": [
+    "codemotion",
+    "react",
+    "flux",
+    "websocket",
+    "mongodb"
+  ],
+  "id": "c8a446a6-e050-419c-b264-8de204917f7c",
+  "description": "<https://goo.gl/EeQVkS>\\\nSpeaker for Codemotion Milan 2017. Along with two colleagues of mine, we held a speech on real time web applications.\n\nHere you can find the abstract:\\\n*Nowadays, applications need to be more and more dynamic, interactive and fast, so much so as to allow content and information to be updated in real time.\\\nDuring this talk, we will see a real example of how to create such a production-ready application, based on a use-case answering this need for interactivity and usability, and using some of the most known technologies the market has to offer, such as React, Flux, WebSocket and MongoDB.*"
+}

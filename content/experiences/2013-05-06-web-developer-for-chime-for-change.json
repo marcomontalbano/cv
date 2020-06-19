@@ -1,0 +1,24 @@
+{
+  "endDate": "2014-03-13",
+  "url": "https://www.chimeforchange.com",
+  "startDate": "2013-05-06",
+  "visible": false,
+  "title": "Web Developer for Chime for Change",
+  "companyId": "38379e88-9042-44c5-8474-e9751a54c197",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "responsive web design",
+    "ruby",
+    "ruby on rails",
+    "catapult",
+    "crowdfunding platform",
+    "test driven development",
+    "git",
+    "refinery cms"
+  ],
+  "id": "697834c2-2bd2-4e4f-92be-31dc810470dc",
+  "description": "[www.chimeforchange.org](http://www.chimeforchange.org)\\\nTake in charge, development and maintenance of the website using Ruby on Rails and Refinery CMS.\n\n* Website developed in RWD (responsive web design) and TDD (test driven development).\n* This experience gave me the chance to know more about crowdfunding (www.catapult.org).",
+  "picture": "/assets/www.chimeforchange.org.jpg"
+}

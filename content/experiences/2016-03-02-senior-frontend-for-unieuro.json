@@ -1,0 +1,22 @@
+{
+  "endDate": "2016-04-15",
+  "url": "https://www.unieuro.it",
+  "startDate": "2016-03-02",
+  "visible": true,
+  "title": "Senior Frontend for Unieuro",
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "e-commerce",
+    "git",
+    "unit testing",
+    "hybris",
+    "mobile",
+    "responsive web design"
+  ],
+  "id": "0a766719-05cb-4c38-be9b-925b2daa37d0",
+  "description": "[www.unieuro.it](http://www.unieuro.it)\\\nFront-end architecture of the new e-commerce site. I developed a new way to use page components and how they interact, so as to reduce duplicated code and increase maintainability.\n\nMoreover, this is the first big project to use my own [jCreate](/portfolio/3/jcreate) library.\\\n<https://github.com/marcomontalbano/jquery-jcreate>",
+  "picture": "/assets/www.unieuro.it.jpg"
+}

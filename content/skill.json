@@ -9,12 +9,12 @@
   "languages": [
     {
       "name": "English",
-      "listening": "B1",
+      "listening": "B2",
       "reading": "B2",
       "spokenInteraction": "B1",
       "spokenProduction": "B1",
-      "writing": "B1"
+      "writing": "B2"
     }
   ],
-  "skills": ""
+  "skills": "* Strong experience of **HTML 5**, **CSS 3** (LESS and **SCSS**) building complex frontend applications and e-commerce.\n* Strong experience of **JavaScript** **ES6**+ and **TypeScript**. Worked on **React** application with Flux and **Redux**.\n* Fan of **JAMStack**. I always love experimenting new stuff.\n* Worked on **Node.js**, **PHP** and **Java** projects (mainly Hybris).\n* Strong experience of version control with **Git**.\n* I always strive to write **clean and readable code**. When possible I apply **TDD** approach. I also like automation and I work with **Travis**, **Jenkins**, **Github Actions** and **GitLab CI**.\n* I love learning and teaching.\n* In-between code lines I also play piano."
 }

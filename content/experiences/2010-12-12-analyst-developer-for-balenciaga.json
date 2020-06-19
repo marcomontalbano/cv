@@ -1,0 +1,22 @@
+{
+  "endDate": "2012-04-30",
+  "url": "https://www.balenciaga.com",
+  "startDate": "2010-12-12",
+  "visible": false,
+  "title": "Analyst Developer for Balenciaga",
+  "companyId": "3c7dc502-e5f8-41d7-8f27-8bc7f79ec903",
+  "tags": [
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "jquery",
+    "video",
+    "e-commerce",
+    "demandware",
+    "git"
+  ],
+  "id": "318c2da6-cd32-4236-9a0d-8f3cc18986cd",
+  "description": "[www.balenciaga.com](http://www.balenciaga.com)\\\nDevelopment of the e-commerce site using Demandware.\\\nThe site was developed using an MVC framework for Demandware, to replace the traditional Pipelines and Pipelets workflow.",
+  "picture": "/assets/www.balenciaga.com.jpg"
+}

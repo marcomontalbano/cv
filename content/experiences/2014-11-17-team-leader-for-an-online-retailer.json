@@ -1,0 +1,20 @@
+{
+  "visible": false,
+  "id": "fa64979e-b1e4-480f-b004-474fe6d2b8c6",
+  "startDate": "2014-11-17",
+  "endDate": "2015-10-16",
+  "description": "Team leading and architecture definition of the front-end side of the e-commerce using Hybris.\n\n* Leader of a team.\n* Tutoring of an intern and senior coach to less experienced colleagues.\n* Two-days course on \"WCSM Training\" with Hybris consultant.\n* Continuous integration with Jenkins.",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "java",
+    "hybris",
+    "team leader",
+    "e-commerce",
+    "subversion",
+    "jenkins"
+  ],
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "title": "Team Leader for an Online Retailer"
+}

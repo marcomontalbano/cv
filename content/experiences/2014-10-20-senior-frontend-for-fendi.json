@@ -1,0 +1,22 @@
+{
+  "endDate": "2014-11-14",
+  "url": "https://www.fendi.com",
+  "startDate": "2014-10-20",
+  "visible": false,
+  "title": "Senior frontend for Fendi",
+  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "tags": [
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "e-commerce",
+    "git",
+    "mobile",
+    "responsive web design",
+    "unit testing"
+  ],
+  "id": "b48029e5-1b1c-4517-ba01-ccf4a3d15e81",
+  "description": "[www.fendi.com](http://www.fendi.com)\\\nArchitecture of the mobile application of the e-commerce site defining code guidelines for future development of the mobile site.",
+  "picture": "/assets/www.fendi.com.jpg"
+}

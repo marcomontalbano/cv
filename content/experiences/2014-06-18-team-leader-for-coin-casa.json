@@ -1,0 +1,23 @@
+{
+  "endDate": "2014-10-31",
+  "url": "https://www.coincasa.it",
+  "startDate": "2014-06-18",
+  "visible": false,
+  "title": "Team Leader for Coin Casa",
+  "companyId": "38379e88-9042-44c5-8474-e9751a54c197",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "responsive web design",
+    "test driven development",
+    "demandware",
+    "team leader",
+    "e-commerce",
+    "subversion",
+    "unit testing"
+  ],
+  "id": "2d17031e-9082-4a1f-969f-f63d60723647",
+  "description": "[www.coincasa.it](http://www.coincasa.it)\\\nTechnical leading and architecture of the e-commerce site using Demandware.\n\n* Development of an RWD accelerator for Demandware in order to speed up all future projects based on the same platform.\n* Complete re-writing of the front-end side, creating a better-performing application and a cleaner and maintainable code.\n* All main Javascript functionalities are written using tests.\n* Tutoring of an intern and senior coach to less experienced colleagues.",
+  "picture": "/assets/www.coincasa.it.jpg"
+}

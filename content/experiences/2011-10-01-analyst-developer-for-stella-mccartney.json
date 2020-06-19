@@ -1,0 +1,22 @@
+{
+  "endDate": "2012-04-30",
+  "url": "https://www.stellamccartney.com",
+  "startDate": "2011-10-01",
+  "visible": false,
+  "title": "Analyst Developer for Stella McCartney",
+  "companyId": "3c7dc502-e5f8-41d7-8f27-8bc7f79ec903",
+  "tags": [
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "jquery",
+    "video",
+    "demandware",
+    "e-commerce",
+    "git"
+  ],
+  "id": "e1beacd9-733b-4d7c-8700-f6dce94e68b9",
+  "description": "[www.stellamccartney.com](http://www.stellamccartney.com)\\\nImproving the e-commerce site of Stella McCartney adding the Kids category.\\\nThe site was developed using an MVC framework for Demandware, to replace the traditional Pipelines and Pipelets workflow.",
+  "picture": "/assets/www.stellamccartney.com.jpg"
+}
