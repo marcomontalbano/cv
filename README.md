@@ -1,5 +1,7 @@
 # Curriculum
 
+![Build and Deploy](https://github.com/marcomontalbano/curriculum/workflows/Build%20and%20Deploy/badge.svg)
+
 ## Why this repo?
 
 Like always, I love to experiment new stuff and ways of working.
