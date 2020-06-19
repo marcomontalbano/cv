@@ -1,4 +1,3 @@
-
 import fs from 'fs';
 import path from 'path';
 import pdf from 'html-pdf';
@@ -12,13 +11,13 @@ const options: pdf.CreateOptions = {
         top: '15mm',
         right: '10mm',
         bottom: '15mm',
-        left: '10mm'
-    }
+        left: '10mm',
+    },
 };
 
 const createResult = pdf.create(fs.readFileSync('./build/index.html', 'utf8'), options);
 
-createResult.toFile('./dist/curriculum.pdf', (err, res) => {
+createResult.toFile('./dist/curriculum-marco-montalbano.pdf', (err, res) => {
     if (err) {
         console.log(err);
         return;
