@@ -10,7 +10,7 @@ type Props = {
     data: NetlifyCMSContent;
 };
 
-const sort = <T extends {}>(items: T[]): T[] => sortBy(items, 'startDate').reverse();
+const sort = <T,>(items: T[]): T[] => sortBy(items, 'startDate').reverse();
 
 const App = ({ data }: Props): h.JSX.Element => (
     <div className="container">

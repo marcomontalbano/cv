@@ -16,8 +16,7 @@ type ContentEntries = [string, Collections][];
 
 const readdirSync = (root: string): string[] => fs.readdirSync(root).map((basename) => path.resolve(root, basename));
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const readFileAsJson = (file: string): any => JSON.parse(fs.readFileSync(file, 'utf8'));
+const readFileAsJson = (file: string): Collection => JSON.parse(fs.readFileSync(file, 'utf8')) as Collection;
 
 const parseCollection = (collectionPath: string): Collections =>
     readdirSync(collectionPath).map((file) => readFileAsJson(file));
@@ -64,7 +63,7 @@ const resolveCollectionRelations = (contentEntries: ContentEntries, collection: 
         return [key, value];
     });
 
-    return Object.fromEntries(itemEntries);
+    return Object.fromEntries(itemEntries) as Collection;
 };
 
 const resolveRelations = (contentEntries: ContentEntries): ContentEntries =>
