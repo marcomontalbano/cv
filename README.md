@@ -35,3 +35,12 @@ After the deploy, you need to enable the Identity feature. You can follow the of
 `npm run dev` starts local development
 
 `npm run build:cv` :sparkles: builds website to pdf
+
+### Local Development
+
+You can [connect Netlify CMS to a local Git repository](https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository), instead of working with a live repo.
+
+1. Navigate to a local Git repository configured with the CMS.
+1. Run `npx netlify-cms-proxy-server` from the root directory.
+1. Add the top-level property `local_backend: true` configuration to your `config.yml`.
+1. Run `npx serve src/static/admin` from the root directory.
