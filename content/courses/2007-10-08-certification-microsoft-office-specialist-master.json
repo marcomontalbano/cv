@@ -1,10 +1,11 @@
 {
-  "visible": true,
-  "id": "3d843897-0293-4368-a080-70bf9ebc3794",
-  "startDate": "2007-10-08",
   "endDate": "2007-11-06",
+  "startDate": "2007-10-08",
+  "attachments": "/assets/marco-montalbano-microsoft_office_specialist_master_2003_certificate.pdf",
+  "visible": true,
+  "duration": "160 hours",
   "title": "Certification \"Microsoft Office Specialist Master\"",
   "companyId": "435bfc8e-55d8-4da1-986a-ee54f7139e8d",
-  "duration": "160 hours",
+  "id": "3d843897-0293-4368-a080-70bf9ebc3794",
   "description": "I sat the examination for \"Microsoft Office Specialist Master\" after the proper 160 hours course."
 }
