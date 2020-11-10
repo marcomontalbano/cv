@@ -1,7 +1,12 @@
 {
   "endDate": "2013-02-01",
   "startDate": "2013-01-27",
-  "attachments": "/assets/marco-montalbano-demandware_developer_training.pdf",
+  "attachments": [
+    {
+      "file": "/assets/marco-montalbano-demandware_developer_training.pdf",
+      "name": "Demandware Developer Certificate"
+    }
+  ],
   "visible": true,
   "duration": "5 days",
   "title": "Demandware Developer",

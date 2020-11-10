@@ -2,7 +2,12 @@
   "endDate": "2018-06-12",
   "url": "https://www.scrumalliance.org/community/profile/mmontalban3",
   "startDate": "2018-06-11",
-  "attachments": "/assets/marco-montalbano-scrumalliance_csm_certificate.pdf",
+  "attachments": [
+    {
+      "file": "/assets/marco-montalbano-scrumalliance_csm_certificate.pdf",
+      "name": "ScrumAlliance - Certified ScrumMaster®"
+    }
+  ],
   "visible": true,
   "duration": "2 days",
   "title": "Certified ScrumMaster®",

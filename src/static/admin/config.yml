@@ -93,13 +93,14 @@ collections:
         required: false
         name: "picture"
         widget: "image"
-      - label: "Attachments"
+      - name: "attachments"
+        label: "Attachments"
+        label_singular: "Attachment"
         required: false
-        name: "attachments"
-        widget: "file"
-        media_library:
-          config:
-            multiple: true
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "File", name: "file", widget: "file" }
       - label: "Company"
         name: "companyId"
         widget: "relation"

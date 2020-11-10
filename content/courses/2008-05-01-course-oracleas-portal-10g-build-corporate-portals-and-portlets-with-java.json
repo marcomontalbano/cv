@@ -1,7 +1,12 @@
 {
   "endDate": "2008-05-09",
   "startDate": "2008-05-05",
-  "attachments": "/assets/marco-montalbano-oracleas_portal_10g.pdf",
+  "attachments": [
+    {
+      "name": "OracleAS Portal 10g: Build Corporate Portals and Portlets with Java",
+      "file": "/assets/marco-montalbano-oracleas_portal_10g.pdf"
+    }
+  ],
   "visible": true,
   "duration": "5 days",
   "title": "Course: \"OracleAS Portal 10g: Build Corporate Portals and Portlets with Java\"",

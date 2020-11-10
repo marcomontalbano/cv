@@ -1,7 +1,12 @@
 {
   "endDate": "2007-11-06",
   "startDate": "2007-10-08",
-  "attachments": "/assets/marco-montalbano-microsoft_office_specialist_master_2003_certificate.pdf",
+  "attachments": [
+    {
+      "name": "Microsoft Office Specialist Master",
+      "file": "/assets/marco-montalbano-microsoft_office_specialist_master_2003_certificate.pdf"
+    }
+  ],
   "visible": true,
   "duration": "160 hours",
   "title": "Certification \"Microsoft Office Specialist Master\"",
