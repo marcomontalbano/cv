@@ -4,7 +4,7 @@
   "startDate": "2017-06-13",
   "endDate": "2017-06-16",
   "title": "Demandware - Developing for Digital I",
-  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
   "duration": "4 days",
   "description": "We modified and customized the Commerce Cloud Digital reference application, SiteGenesis, through the use of core Digital programming concepts, files, and scripting language. The course was taught by Stefan Bräutigam."
 }

@@ -1,9 +1,10 @@
 {
+  "endDate": "",
   "url": "https://www.gucci.com/",
   "startDate": "2017-01-09",
   "visible": true,
-  "title": "Team Leader for Gucci",
-  "companyId": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "title": "Team Leader for Gucci",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
   "tags": [
     "html",
     "css",

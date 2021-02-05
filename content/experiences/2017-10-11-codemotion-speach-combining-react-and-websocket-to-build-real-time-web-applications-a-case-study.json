@@ -4,7 +4,7 @@
   "startDate": "2017-10-11",
   "visible": true,
   "title": "Codemotion speach: \"Combining React and Websocket to build real time web applications: a case study\"",
-  "companyId": "c2e4bf71-b5b2-45b2-8f56-9db191e213d9",
+  "company": "c2e4bf71-b5b2-45b2-8f56-9db191e213d9",
   "tags": [
     "codemotion",
     "react",

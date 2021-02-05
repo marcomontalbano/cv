@@ -1,8 +1,0 @@
-{
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-        "rootDir": ".",
-        "outDir": "prerender-urls"
-    },
-    "include": ["prerender-urls.ts"],
-}

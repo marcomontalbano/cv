@@ -5,7 +5,7 @@
   "visible": true,
   "duration": "",
   "title": "Diploma di perito industriale capotecnico spec. ABACUS",
-  "companyId": "06be07bb-0336-4aeb-9469-2e1e8fa57c4e",
+  "company": "06be07bb-0336-4aeb-9469-2e1e8fa57c4e",
   "id": "9166b2b0-0618-4fdf-b453-9c0368843ed2",
   "description": "I graduated from Istituto Statale \"G. Cardano\", high school for informatics specialists in Pavia. For my school-leaving examination I developed an online puzzlegame, developed in Visual Studio C # using the Microsoft XNA libraries. I've also developed a WebService for the online publication of users' scores.[](https://github.com/marcomontalbano/numberun)\\\n<https://github.com/marcomontalbano/numberun>"
 }
