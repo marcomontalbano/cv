@@ -34,6 +34,9 @@ After the deploy, you need to enable the Identity feature. You can follow the of
 
 `npm run dev` starts local development
 
+- admin - http://localhost:5000
+- web - http://localhost:8080
+
 `npm run build:cv` :sparkles: builds website to pdf
 
 ### Local Development
