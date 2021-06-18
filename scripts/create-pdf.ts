@@ -2,7 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import pdf from 'html-pdf';
 
-const options: pdf.CreateOptions = {
+type MissingCreateOptions = {
+    localUrlAccess: boolean;
+};
+
+const options: pdf.CreateOptions & MissingCreateOptions = {
     format: 'A4',
     orientation: 'portrait',
     type: 'pdf',
@@ -13,6 +17,8 @@ const options: pdf.CreateOptions = {
         bottom: '15mm',
         left: '10mm',
     },
+
+    localUrlAccess: true,
 };
 
 const createResult = pdf.create(fs.readFileSync('./build/index.html', 'utf8'), options);
