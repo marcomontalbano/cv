@@ -15,7 +15,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "ID", name: "id", widget: "uuid"}
+      - {label: "ID", name: "id", widget: "id"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Picture", name: "picture", widget: "image", required: false}
       - {label: "Url", name: "url", widget: "string", required: false}
@@ -31,7 +31,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - latel: "ID"
         name: "id"
-        widget: "uuid"
+        widget: "id"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -81,7 +81,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - latel: "ID"
         name: "id"
-        widget: "uuid"
+        widget: "id"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -139,7 +139,7 @@ collections:
         fields:
           - latel: "ID"
             name: "id"
-            widget: "uuid"
+            widget: "id"
           - label: "Fullname"
             name: "fullname"
             widget: "string"
@@ -172,7 +172,7 @@ collections:
         fields:
           - latel: "ID"
             name: "id"
-            widget: "uuid"
+            widget: "id"
           - label: "Native language"
             name: "nativeLanguage"
             widget: "list"
