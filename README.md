@@ -18,7 +18,7 @@ I wanted to play with **JAMStack** approach, so why not build and publish a full
 
 I'm using [Netlify CMS](https://www.netlifycms.org/) to make instant changes to the pdf. I configured Netlify CMS to store all data in `.json` format inside the `./content` folder.
 
-I created this script `./scripts/netlify-cms.ts` which is able to read all data from json and create a javascript object resolving relations between different collections. This object is then used by [Preact CLI](https://github.com/preactjs/preact-cli) to prerender the data.
+I created this script [`netlify-cms-json-exporter`](https://github.com/marcomontalbano/netlify-cms-json-exporter) which is able to read all data from json and create a javascript object resolving relations between different collections. This object is then used by [Preact CLI](https://github.com/preactjs/preact-cli) to prerender the data.
 
 Last but not least, I'm using [GitHub Actions](https://github.com/features/actions) to build and publish the pdf. I choose the `macos` image because it makes the pdf text selectable and searchable without any effort.
 
