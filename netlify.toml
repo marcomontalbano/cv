@@ -1,7 +1,10 @@
 [build]
   publish = "src/static"
-  command = ""
+  command = "npm run build:cv"
 
-# [[redirects]]
-#   from = "/"
-#   to = "/curriculum.pdf"
+[[redirects]]
+  from = "/"
+  to = "/curriculum-marco-montalbano.pdf"
+  status = 200
+  force = true
+  headers = { Content-Disposition = "attachment; filename='curriculum-marco-montalbano.pdf'" }

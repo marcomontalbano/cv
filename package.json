@@ -9,7 +9,7 @@
     "test": "jest --coverage",
     "build": "preact build --prerenderUrls ./prerender-urls.js",
     "dev:front": "preact watch --prerender --clear false --prerenderUrls ./prerender-urls.js",
-    "dev:admin": "concurrently -n netlify-cms-proxy-server,admin \"npx netlify-cms-proxy-server\" \"npx serve src/static/admin\"",
+    "dev:admin": "concurrently -n netlify-cms-proxy-server,admin \"npx netlify-cms-proxy-server\" \"npx serve src/static\"",
     "dev": "concurrently npm:dev:*",
     "prebuild:cv": "npm run build",
     "build:cv": "ts-node ./scripts/create-pdf.ts"
