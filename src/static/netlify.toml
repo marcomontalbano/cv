@@ -1,10 +1,15 @@
 [build]
-  publish = "."
-  command = ""
+  publish = '.'
+  command = ''
 
 [[redirects]]
-  from = "/"
-  to = "/curriculum-marco-montalbano.pdf"
+  from = '/'
+  to = '/curriculum-marco-montalbano.pdf'
   status = 200
   force = true
-  headers = { Content-Disposition = "attachment; filename='curriculum-marco-montalbano.pdf'" }
+  headers = { Content-Disposition = 'inline; filename="curriculum-marco-montalbano.pdf"' }
+
+[[headers]]
+  for = '/'
+  [headers.values]
+    Content-Disposition = 'inline; filename="curriculum-marco-montalbano.pdf"'
