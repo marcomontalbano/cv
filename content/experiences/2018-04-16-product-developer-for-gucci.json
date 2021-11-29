@@ -1,0 +1,28 @@
+{
+  "endDate": "",
+  "url": "https://www.gucci.com/",
+  "startDate": "2018-04-16",
+  "visible": true,
+  "title": "Product Developer for Gucci",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "java",
+    "hybris",
+    "jenkins",
+    "continuous delivery",
+    "git",
+    "kotlin",
+    "react",
+    "redux",
+    "agile",
+    "aws",
+    "okta",
+    "algolia"
+  ],
+  "id": "55553f47-31e0-4f3e-8396-3cb1759fcb90",
+  "description": "[www.gucci.com](https://www.gucci.com)\\\nI took part in the first agile team participating in the first inception meeting. I'm still contributing to the agile transformation working side by side with agile coaches. \\\nOne year later, we started re-platforming from monolith to micro frontends and microservices. We moved our infrastructure to AWS and we started using Terraform to manage all our services.\n\n* Working in a cross-functional product team of 8 people.\n* Improved my tech skills with React, Redux, Kotlin, AWS, Algolia and Okta.\n* TDD approach; code is surrounded by unit tests and e2e.\n* Spreading my knowledge during our Friday dojo.\n* Contributing to communities of practice.",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "picture": "/assets/www.gucci.com-4.jpg"
+}

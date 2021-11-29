@@ -1,0 +1,25 @@
+{
+  "endDate": "",
+  "url": "https://vault.gucci.com",
+  "startDate": "2021-01-25",
+  "visible": true,
+  "title": "Product Developer for Vault Gucci",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "jenkins",
+    "continuous delivery",
+    "git",
+    "react",
+    "agile",
+    "aws",
+    "contentful",
+    "jamstack"
+  ],
+  "id": "f78d8997-7e58-4f17-88cf-d3d8c1bffe1a",
+  "description": "[vault.gucci.com](https://vault.gucci.com)\\\nVault is a brand new project by Gucci. On Vault you can buy rare vintage and unique pieces by new designers. We built this new e-commerce experience from scratch following a JAMStack approach. Built on top of Next.js, the website fetches contents from Contentful and other custom microservices.\n\n* Working in a cross-functional product team of 8 people.\n* Improved my tech skills with Next.js, React, TypeScript, Contentful and AWS.\n* TDD approach; code is surrounded by unit tests and e2e.",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "picture": ""
+}
