@@ -23,7 +23,7 @@ const options: pdf.CreateOptions & MissingCreateOptions = {
 
 const createResult = pdf.create(fs.readFileSync('./build/index.html', 'utf8'), options);
 
-const filename = 'curriculum-marco-montalbano.pdf';
+const filename = 'cv-marco-montalbano.pdf';
 
 createResult.toFile(`./src/static/${filename}`, (err, res) => {
     if (err) {

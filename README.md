@@ -1,13 +1,13 @@
-# Curriculum
+# CV
 
-![Build and Deploy](https://github.com/marcomontalbano/curriculum/workflows/Build%20and%20Deploy/badge.svg)
+![Build and Deploy](https://github.com/marcomontalbano/cv/workflows/Build%20and%20Deploy/badge.svg)
 
 ## Why this repo?
 
 Like always, I love to experiment new stuff and ways of working.
-When I finally had time to revamp my old website I decided to revamp my curriculum as well (of course update the information inside it is another story :joy:).
+When I finally had time to revamp my old website I decided to revamp my cv as well (of course update the information inside it is another story :joy:).
 
-A curriculum should be a pdf that you can send via email, upload on the company's website to apply for a new position or simply print.
+A cv should be a pdf that you can send via email, upload on the company's website to apply for a new position or simply print.
 Instead of using already existing online tools or any word processor, I decided to create a new <u>*website that builds into pdf*</u>.
 
 Yes, you read that right!
@@ -24,7 +24,7 @@ Last but not least, I'm using [GitHub Actions](https://github.com/features/actio
 
 ### Hosting
 
-If you like this approch you can host your own curriculum.
+If you like this approch you can host your own cv.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marcomontalbano/video-to-markdown)
 

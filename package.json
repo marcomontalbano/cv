@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "curriculum",
+  "name": "marcomontalbano-cv",
   "version": "0.2.2",
   "description": "",
   "main": "index.js",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcomontalbano/curriculum.git"
+    "url": "git+https://github.com/marcomontalbano/cv.git"
   },
   "keywords": [],
   "author": "Marco Montalbano <marcomontalbano.work@gmail.com> (https://marcomontalbano.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcomontalbano/curriculum/issues"
+    "url": "https://github.com/marcomontalbano/cv/issues"
   },
-  "homepage": "https://github.com/marcomontalbano/curriculum#readme",
+  "homepage": "https://github.com/marcomontalbano/cv#readme",
   "eslintIgnore": [
     "build/*",
     "dist/*"

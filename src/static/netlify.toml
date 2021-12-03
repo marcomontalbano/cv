@@ -4,12 +4,12 @@
 
 [[redirects]]
   from = '/'
-  to = '/curriculum-marco-montalbano.pdf'
+  to = '/cv-marco-montalbano.pdf'
   status = 200
   force = true
-  headers = { Content-Disposition = 'inline; filename="curriculum-marco-montalbano.pdf"' }
+  headers = { Content-Disposition = 'inline; filename="cv-marco-montalbano.pdf"' }
 
 [[headers]]
   for = '/'
   [headers.values]
-    Content-Disposition = 'inline; filename="curriculum-marco-montalbano.pdf"'
+    Content-Disposition = 'inline; filename="cv-marco-montalbano.pdf"'
