@@ -3,6 +3,11 @@
   command = ''
 
 [[redirects]]
+  from = "https://marcomontalbano-cv.netlify.app/*"
+  to = "https://cv.marcomontalbano.com/:splat"
+  force = true
+
+[[redirects]]
   from = '/'
   to = '/cv-marco-montalbano.pdf'
   status = 200
