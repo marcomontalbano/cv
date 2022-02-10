@@ -54,7 +54,7 @@
     "jest": "~27.4.7",
     "lint-staged": "~12.3.2",
     "netlify-cms-json-exporter": "0.1.2",
-    "node-sass": "~6.0.1",
+    "node-sass": "~7.0.0",
     "preact": "^10.6.4",
     "preact-cli": "^3.3.3",
     "preact-render-to-string": "^5.1.19",
