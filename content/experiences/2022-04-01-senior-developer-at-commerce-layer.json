@@ -1,0 +1,23 @@
+{
+  "endDate": "",
+  "url": "https://commercelayer.io",
+  "startDate": "2022-04-01",
+  "visible": true,
+  "title": "Senior Developer at Commerce Layer",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "continuous delivery",
+    "git",
+    "react",
+    "heroku",
+    "contentful",
+    "jamstack",
+    "app"
+  ],
+  "id": "f78d8997-7e58-4f17-88cf-d3d8c1bffe1a",
+  "description": "[commercelayer.io](https://commercelayer.io)\\\nCommerce Layer is a multi-market commerce API and order management system that lets you add global shopping capabilities to any website, mobile app, chatbot, wearable, voice, or IoT device, with ease. Compose your stack with the best-of-breed tools you already mastered and love. Make any experience shoppable, anywhere, through a blazing-fast, enterprise-grade, and secure API.",
+  "company": "7b3ca26b-9838-4f05-83e1-a5af0c24bdc0"
+}

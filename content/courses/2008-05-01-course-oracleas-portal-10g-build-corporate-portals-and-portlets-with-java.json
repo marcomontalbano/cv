@@ -7,10 +7,10 @@
       "file": "/assets/marco-montalbano-oracleas_portal_10g.pdf"
     }
   ],
-  "visible": true,
+  "visible": false,
   "duration": "5 days",
   "title": "Course: \"OracleAS Portal 10g: Build Corporate Portals and Portlets with Java\"",
-  "company": "1838c687-6b14-4bc0-a533-c33dc01742da",
   "id": "1d1f4e25-582e-4f8b-ae56-b9f78224453d",
-  "description": "Oracle University Course on \"OracleAS Portal 10g: Build Corporate Portals and Portlets with Java\"."
+  "description": "Oracle University Course on \"OracleAS Portal 10g: Build Corporate Portals and Portlets with Java\".",
+  "company": "1838c687-6b14-4bc0-a533-c33dc01742da"
 }
