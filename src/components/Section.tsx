@@ -7,14 +7,14 @@ type Props = {
 };
 
 const Section = ({ sidebarHasTitle = false, sidebar, children }: Props): h.JSX.Element => {
-    const sidebarClassNames = ['sidebar', sidebarHasTitle && 'title'].join(' ');
+  const sidebarClassNames = ['sidebar', sidebarHasTitle && 'title'].join(' ');
 
-    return (
-        <div className="section">
-            <div className={sidebarClassNames}>{sidebar}</div>
-            <div className="content">{children}</div>
-        </div>
-    );
+  return (
+    <div className="section">
+      <div className={sidebarClassNames}>{sidebar}</div>
+      <div className="content">{children}</div>
+    </div>
+  );
 };
 
 export default Section;
