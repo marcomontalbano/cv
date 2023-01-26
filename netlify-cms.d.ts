@@ -24,12 +24,16 @@ interface Experience {
     tags?: string[];
     description: string;
 }
+interface Attachment {
+    name: string;
+    file: string;
+}
 interface Course {
     id: string;
     title: string;
     visible: boolean;
     picture?: string;
-    attachments?: string[];
+    attachments?: Attachment[];
     company: Company;
     startDate: string;
     endDate?: string;

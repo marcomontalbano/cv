@@ -14,7 +14,7 @@ type Picture = {
 
 const formatDate = (date: string): string => format(new Date(date), 'dd MMMM yyyy');
 
-const Picture = ({ src, alt }: Picture): h.JSX.Element => <img height="80" src={`.${src}`} alt={alt} />;
+const Picture = ({ src, alt }: Picture): h.JSX.Element => <img height="100" src={`.${src}`} alt={alt} />;
 
 const Profile = ({ profile }: Props): h.JSX.Element => (
     <Fragment>

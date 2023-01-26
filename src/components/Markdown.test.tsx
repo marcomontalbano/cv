@@ -1,6 +1,6 @@
-import { h } from 'preact';
-import { render } from '@testing-library/preact';
-import Markdown from './Markdown';
+import { render } from '@testing-library/preact'
+import { describe, expect, it } from 'vitest'
+import Markdown from './Markdown'
 
 describe('Markdown', () => {
     it('should render a given markdown as html', () => {

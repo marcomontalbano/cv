@@ -1,5 +1,5 @@
 # https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
-local_backend: false
+local_backend: true
 
 backend:
   name: git-gateway
