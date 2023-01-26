@@ -1,0 +1,194 @@
+# https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: src/static/assets
+public_folder: /assets
+collections:
+
+  - name: "companies" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    label: "Company" # Used in the UI
+    folder: "content/companies" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "ID", name: "id", widget: "id"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Picture", name: "picture", widget: "image", required: false}
+      - {label: "Url", name: "url", widget: "string", required: false}
+      - {label: "Address", name: "address", widget: "string", required: false}
+
+  - name: "experiences" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    label: "Work Experience" # Used in the UI
+    folder: "content/experiences" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortableFields: ['startDate']
+    fields: # The fields for each document, usually in front matter
+      - latel: "ID"
+        name: "id"
+        widget: "id"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Visible"
+        name: "visible"
+        widget: "boolean"
+        default: true
+      - label: "Picture"
+        required: false
+        name: "picture"
+        widget: "image"
+      - label: "Company"
+        name: "company"
+        widget: "relation"
+        collection: "companies"
+        searchFields: ["name", "address"]
+        valueField: "id"
+        displayFields: ["name"]
+      - label: "Start Date"
+        name: "startDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "End Date"
+        required: false 
+        name: "endDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "Url"
+        required: false
+        name: "url"
+        widget: "string"
+      - label: "Tags"
+        required: false
+        name: "tags"
+        widget: "list"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+
+  - name: "courses" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    label: "Course" # Used in the UI
+    folder: "content/courses" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    sortableFields: ['startDate', 'title']
+    fields: # The fields for each document, usually in front matter
+      - latel: "ID"
+        name: "id"
+        widget: "id"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Visible"
+        name: "visible"
+        widget: "boolean"
+        default: true
+      - label: "Picture"
+        required: false
+        name: "picture"
+        widget: "image"
+      - name: "attachments"
+        label: "Attachments"
+        label_singular: "Attachment"
+        required: false
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "File", name: "file", widget: "file" }
+      - label: "Company"
+        name: "company"
+        widget: "relation"
+        collection: "companies"
+        searchFields: ["name", "address"]
+        valueField: "id"
+        displayFields: ["name"]
+      - label: "Start Date"
+        name: "startDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "End Date"
+        required: false 
+        name: "endDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "Duration"
+        required: false 
+        name: "duration"
+        widget: "string"
+      - label: "Url"
+        required: false
+        name: "url"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+
+  - name: "general" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    label: "General" # Used in the UI
+    files:
+      - name: "profile"
+        label: "Profile"
+        file: "content/profile.json"
+        fields:
+          - latel: "ID"
+            name: "id"
+            widget: "id"
+          - label: "Fullname"
+            name: "fullname"
+            widget: "string"
+          - label: "Picture"
+            name: "picture"
+            widget: "image"
+          - label: "Address"
+            name: "address"
+            widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: "string"
+          - label: "Web"
+            name: "web"
+            widget: "string"
+          - label: "Born date"
+            name: "born_date"
+            widget: "date"
+            format: "YYYY-MM-DD"
+          - label: "Nationality"
+            name: "nationality"
+            widget: "string"
+          - label: "Position"
+            name: "position"
+            widget: "string"
+
+      - name: "skill"
+        label: "Skill"
+        file: "content/skill.json"
+        fields:
+          - latel: "ID"
+            name: "id"
+            widget: "id"
+          - label: "Native language"
+            name: "nativeLanguage"
+            widget: "list"
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Listening", name: "listening", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Reading", name: "reading", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Spoken Interaction", name: "spokenInteraction", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Spoken Production", name: "spokenProduction", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+              - { label: "Writing", name: "writing", widget: "select", options: ["A1", "A2", "B1", "B2", "C1", "C2"] }
+          - label: "Driving license"
+            name: "drivingLicense"
+            widget: "list"
+          - label: "Skills"
+            name: "skills"
+            widget: "markdown"

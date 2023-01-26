@@ -1,0 +1,20 @@
+[build]
+  publish = '.'
+  command = ''
+
+[[redirects]]
+  from = "https://marcomontalbano-cv.netlify.app/*"
+  to = "https://cv.marcomontalbano.com/:splat"
+  force = true
+
+[[redirects]]
+  from = '/'
+  to = '/cv-marco-montalbano.pdf'
+  status = 200
+  force = true
+  headers = { Content-Disposition = 'inline; filename="cv-marco-montalbano.pdf"' }
+
+[[headers]]
+  for = '/'
+  [headers.values]
+    Content-Disposition = 'inline; filename="cv-marco-montalbano.pdf"'
