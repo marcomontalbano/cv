@@ -1,6 +1,6 @@
 # CV
 
-![Build and Deploy](https://github.com/marcomontalbano/cv/workflows/Build%20and%20Deploy/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac59c871-ad29-49c8-818b-09855f851806/deploy-status)](https://app.netlify.com/sites/marcomontalbano-cv/deploys)
 
 ## Why this repo?
 
@@ -16,7 +16,7 @@ I wanted to play with **JAMStack** approach, so why not build and publish a full
 
 ## Development
 
-I'm using [Netlify CMS](https://www.netlifycms.org/) to make instant changes to the pdf. I configured Netlify CMS to store all data in `.json` format inside the `./content` folder.
+I'm using [Decap CMS](https://decapcms.org/) (formerly Netlify CMS) to make instant changes to the pdf. I configured Decap CMS to store all data in `.json` format inside the `./content` folder.
 
 I created this script [`netlify-cms-json-exporter`](https://github.com/marcomontalbano/netlify-cms-json-exporter) which is able to read all data from json and create a javascript object resolving relations between different collections. This object is then used by [Preact CLI](https://github.com/preactjs/preact-cli) to pre-render the data.
 
@@ -41,7 +41,7 @@ After the deploy, you need to enable the Identity feature. You can follow the of
 
 ### Local Development
 
-You can [connect Netlify CMS to a local Git repository](https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository), instead of working with a live repo.
+You can [connect Decap CMS to a local Git repository](https://decapcms.org/docs/working-with-a-local-git-repository/), instead of working with a live repo.
 
 1. Navigate to a local Git repository configured with the CMS.
 1. Run `npx decap-server` from the root directory.
