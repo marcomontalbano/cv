@@ -10,21 +10,34 @@ type Props = {
   data: NetlifyCMSContent
 }
 
-function sortDescByStartDate<T extends { startDate: string }>(items: T[]): T[] {
-  return items.sort((a, b) => parseFloat(b.startDate) - parseFloat(a.startDate))
+function sortDesc<T extends { endDate?: string; startDate: string }>(
+  items: T[],
+): T[] {
+  return items.sort((a, b) => {
+    if (a.endDate && b.endDate) {
+      return new Date(b.endDate).getTime() - new Date(a.endDate).getTime()
+    }
+
+    if (a.endDate) {
+      return new Date(b.startDate).getTime() - new Date(a.endDate).getTime()
+    }
+
+    if (b.endDate) {
+      return new Date(b.endDate).getTime() - new Date(a.startDate).getTime()
+    }
+
+    return new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
+  })
 }
 
 const App = ({ data }: Props): h.JSX.Element => (
   <div className="container">
     <Profile profile={data.profile} />
     <ItemsWithCompany
-      items={sortDescByStartDate(data.experiences)}
+      items={sortDesc(data.experiences)}
       title="Work Experiences"
     />
-    <ItemsWithCompany
-      items={sortDescByStartDate(data.courses)}
-      title="Courses"
-    />
+    <ItemsWithCompany items={sortDesc(data.courses)} title="Courses" />
     <Skill skill={data.skill} />
     <Section>
       <div style={{ marginTop: '50px' }}>

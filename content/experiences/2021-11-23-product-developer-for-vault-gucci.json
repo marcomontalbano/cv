@@ -1,8 +1,8 @@
 {
-  "endDate": "2022-03-31",
+  "endDate": "2022-03-30",
   "url": "https://vault.gucci.com",
   "startDate": "2021-01-25",
-  "visible": true,
+  "visible": false,
   "title": "Product Developer for Vault Gucci",
   "tags": [
     "html",
