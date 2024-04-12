@@ -1,6 +1,6 @@
 [build]
   publish = './src/static'
-  command = 'npm run build:cv'
+  command = 'npx puppeteer browsers install chrome && npm run build:cv'
 
 [[redirects]]
   from = "https://marcomontalbano-cv.netlify.app/*"
