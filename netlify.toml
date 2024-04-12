@@ -1,6 +1,6 @@
 [build]
-  publish = '.'
-  command = ''
+  publish = './src/static'
+  command = 'npm run build:cv'
 
 [[redirects]]
   from = "https://marcomontalbano-cv.netlify.app/*"

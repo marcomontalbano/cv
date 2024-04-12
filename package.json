@@ -14,7 +14,7 @@
     "predev:front": "npm run prerender",
     "dev:prerender": "nodemon --watch ./content --exec 'npm run prerender'",
     "dev:front": "vite --port 8080",
-    "dev:admin": "concurrently -n cms,web \"npx netlify-cms-proxy-server\" \"npx http-server -p 3000 src/static\"",
+    "dev:admin": "concurrently -n cms,web \"npx decap-server\" \"npx http-server -p 3000 src/static\"",
     "dev": "concurrently -c 'bgYellow.bold,bgBlue.bold,bgGreen.bold' npm:dev:*",
     "prebuild:cv": "npm run build",
     "build:cv": "node ./scripts/create-pdf.mjs",

@@ -3,7 +3,8 @@ local_backend: true
 
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
+
 media_folder: src/static/assets
 public_folder: /assets
 collections:
@@ -52,13 +53,13 @@ collections:
         displayFields: ["name"]
       - label: "Start Date"
         name: "startDate"
-        widget: "date"
-        format: "YYYY-MM-DD"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
       - label: "End Date"
         required: false 
         name: "endDate"
-        widget: "date"
-        format: "YYYY-MM-DD"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
       - label: "Url"
         required: false
         name: "url"
@@ -110,13 +111,13 @@ collections:
         displayFields: ["name"]
       - label: "Start Date"
         name: "startDate"
-        widget: "date"
-        format: "YYYY-MM-DD"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
       - label: "End Date"
         required: false 
         name: "endDate"
-        widget: "date"
-        format: "YYYY-MM-DD"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
       - label: "Duration"
         required: false 
         name: "duration"
@@ -157,8 +158,8 @@ collections:
             widget: "string"
           - label: "Born date"
             name: "born_date"
-            widget: "date"
-            format: "YYYY-MM-DD"
+            widget: "datetime"
+            date_format: "YYYY-MM-DD"
           - label: "Nationality"
             name: "nationality"
             widget: "string"
