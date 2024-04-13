@@ -5,6 +5,7 @@ import puppeteer from 'puppeteer'
 
 import url from 'url'
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+const outputPath = './src/static/cv-marco-montalbano.pdf'
 
 /**
  * Generate a PDF
@@ -22,7 +23,7 @@ async function generatePDF(url) {
 
   /** @type import('puppeteer').PDFOptions */
   const pdfConfig = {
-    path: './src/static/cv-marco-montalbano.pdf',
+    path: outputPath,
     format: 'A4',
     scale: 1,
     // scale: 1.3,
@@ -43,3 +44,5 @@ async function generatePDF(url) {
 }
 
 await generatePDF(`file:${path.join(__dirname, '../dist/index.html')}`)
+
+console.log('> Generated', outputPath, '\n')
