@@ -28,7 +28,8 @@ collections:
     folder: "content/experiences" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    sortableFields: ['startDate']
+    sortableFields: ['startDate','visible']
+    summary: "{{title}} [visible: {{visible}}]"
     fields: # The fields for each document, usually in front matter
       - latel: "ID"
         name: "id"
@@ -68,6 +69,10 @@ collections:
         required: false
         name: "tags"
         widget: "list"
+      - label: "Hide description"
+        name: "hideDescription"
+        widget: "boolean"
+        default: false
       - label: "Description"
         name: "description"
         widget: "markdown"
@@ -126,6 +131,10 @@ collections:
         required: false
         name: "url"
         widget: "string"
+      - label: "Hide description"
+        name: "hideDescription"
+        widget: "boolean"
+        default: false
       - label: "Description"
         name: "description"
         widget: "markdown"

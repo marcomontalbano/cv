@@ -97,6 +97,10 @@ table {
     }
 }
 
+.avoid-page-break-inside {
+    page-break-inside: avoid;
+}
+
 .section {
     margin-bottom: 6px;
     page-break-inside: avoid;

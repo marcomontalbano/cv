@@ -2,9 +2,8 @@
   "endDate": "2018-04-13",
   "url": "https://www.gucci.com/",
   "startDate": "2017-01-09",
-  "visible": true,
+  "visible": false,
   "title": "Team Leader for Gucci",
-  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
   "tags": [
     "html",
     "css",
@@ -19,5 +18,6 @@
   ],
   "id": "a120e357-d2f8-47bf-884f-599b4947f163",
   "description": "[www.gucci.com](https://www.gucci.com/)\\\nI personally took charge of the project, dealing with international realities, overseeing the handover and analysing the pre-existing solution built in Hybris both architecturally and from a procedural point of view.\n\n* Definition of software development processes.\n* Definition and implementation of Continuous Integration through Jenkins, while complying with PCI.\n* Training of both support and development teams.\n* Managing and leading of an onshore team and an offshore team in India.\n* Code reviewing.",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
   "picture": "/assets/www.gucci.com-3.jpg"
 }

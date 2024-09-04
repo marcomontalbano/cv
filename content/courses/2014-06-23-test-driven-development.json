@@ -5,7 +5,8 @@
   "visible": true,
   "duration": "3 days",
   "title": "Test Driven Development",
-  "company": "38379e88-9042-44c5-8474-e9751a54c197",
+  "hideDescription": true,
   "id": "8fcb5512-44cb-4204-a2d8-ec31e99c5134",
-  "description": "The course taught the fundamentals of TDD, provided basic methodological knowledge to assess when and how to apply TDD. We covered Unit Test, Test Driven Development, Integration Test, Refactoring, use of stubs and mocks and test coverage tools. The course was taught by Daniele Demichelis."
+  "description": "The course taught the fundamentals of TDD, provided basic methodological knowledge to assess when and how to apply TDD. We covered Unit Test, Test Driven Development, Integration Test, Refactoring, use of stubs and mocks and test coverage tools. The course was taught by Daniele Demichelis.",
+  "company": "38379e88-9042-44c5-8474-e9751a54c197"
 }

@@ -10,7 +10,8 @@
   "visible": true,
   "duration": "5 days",
   "title": "Demandware Developer",
-  "company": "3120cb45-89c5-4f58-b921-486c967677b9",
+  "hideDescription": true,
   "id": "5b369b00-4dfe-40b3-b341-8a167c200a2d",
-  "description": "Course and certification for \"Demandware Developer\" in Munich."
+  "description": "Course and certification for \"Demandware Developer\" in Munich.",
+  "company": "3120cb45-89c5-4f58-b921-486c967677b9"
 }

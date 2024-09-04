@@ -9,7 +9,7 @@ type Props = {
 }
 
 const Component = ({ skill }: Props): h.JSX.Element => (
-  <Fragment>
+  <div className="avoid-page-break-inside">
     <Section sidebarHasTitle sidebar="Personal Skills" />
     <Section sidebar="Native language">
       {skill.nativeLanguage.join(', ')}
@@ -21,7 +21,7 @@ const Component = ({ skill }: Props): h.JSX.Element => (
     <Section sidebar="Skills">
       <Markdown markdown={skill.skills} />
     </Section>
-  </Fragment>
+  </div>
 )
 
 export default Component

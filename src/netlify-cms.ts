@@ -22,6 +22,7 @@ export interface Experience {
   endDate?: string
   url?: string
   tags?: string[]
+  hideDescription?: boolean
   description: string
 }
 export interface Attachment {
@@ -39,6 +40,7 @@ export interface Course {
   endDate?: string
   duration?: string
   url?: string
+  hideDescription?: boolean
   description: string
 }
 export interface Profile {

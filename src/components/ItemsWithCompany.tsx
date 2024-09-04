@@ -42,19 +42,25 @@ const renderDuration = ({ duration }: Course): h.JSX.Element | string => {
 const renderCompany = ({ name, address }: Company): string =>
   address ? `${name}, ${address}` : name
 
-const renderItem = (item: Experience | Course): h.JSX.Element | false =>
-  item.visible && (
+const renderItem = (item: Experience | Course): h.JSX.Element | false => {
+
+  const description = item.hideDescription !== true ? (
+    <div>
+      <Markdown markdown={item.description} />
+    </div>
+  ) : <></>
+
+  return item.visible && (
     <Section sidebar={renderDate(item.startDate, item.endDate)}>
       <div className="title">
         {item.title}
         {renderDuration(item as Course)}
       </div>
       <div>{renderCompany(item.company)}</div>
-      <div>
-        <Markdown markdown={item.description} />
-      </div>
+      {description}
     </Section>
   )
+}
 
 const ItemsWithCompany = ({ items, title = '' }: Props): h.JSX.Element => (
   <Fragment>

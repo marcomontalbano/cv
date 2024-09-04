@@ -1,0 +1,23 @@
+{
+  "endDate": "2022-03-30",
+  "url": "https://www.gucci.com/",
+  "startDate": "2017-01-09",
+  "visible": true,
+  "title": "Tech Lead for Gucci",
+  "tags": [
+    "html",
+    "css",
+    "javascript",
+    "java",
+    "hybris",
+    "jenkins",
+    "continuous delivery",
+    "git",
+    "team leader",
+    "pci"
+  ],
+  "id": "a120e357-d2f8-47bf-884f-599b4947f163",
+  "description": "[www.gucci.com](https://www.gucci.com/)\\\nI took charge of the project, dealing with international realities, overseeing the handover, and analyzing the pre-existing solution built in Hybris both architecturally and from a procedural point of view. I refined the software development processes and implemented a CI/CD through Jenkins while complying with PCI (before that moment everything was manual). I trained both the support and development teams and led an onshore team and an offshore team in India.\n\nLater on, in 2018, I took part in the first agile team participating in the first inception meeting, and contributed to the agile transformation, working side by side with agile coaches. \\\nOne year later, we started re-platforming from monolith to micro frontends and microservices. We moved our infrastructure to AWS and we started using Terraform to manage all our services.\n\n* Working in a cross-functional product team of 8 people.\n* Improved my tech skills with React, Redux, Next.js, Kotlin, AWS, Algolia, and Okta.\n* TDD approach; code is surrounded by unit tests and e2e.\n* Spreading my knowledge during our Friday dojo.\n* Contributing to communities of practice.",
+  "company": "15505e0e-0006-44a6-88de-ec2b34bed94f",
+  "picture": "/assets/www.gucci.com-4.jpg"
+}
