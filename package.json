@@ -18,8 +18,8 @@
     "dev": "concurrently -c 'bgYellow.bold,bgBlue.bold,bgGreen.bold' npm:dev:*",
     "prebuild:cv": "npm run build",
     "build:cv": "node ./scripts/create-pdf.mjs",
-    "dep:upgrade:major": "npx npm-check-updates -u",
-    "dep:upgrade:minor": "npm run dep:upgrade:major -- --target minor"
+    "dep:major": "npx npm-check-updates -u",
+    "dep:minor": "npm run dep:major -- --target minor"
   },
   "repository": {
     "type": "git",
@@ -37,28 +37,28 @@
     "dist/*"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.8.2",
-    "@testing-library/preact": "~3.2.3",
-    "@types/node": "~20.12.7",
-    "@types/showdown": "~2.0.6",
-    "@typescript-eslint/eslint-plugin": "~7.6.0",
-    "@typescript-eslint/parser": "~7.6.0",
-    "concurrently": "^8.2.2",
-    "date-fns": "~3.6.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "~7.34.1",
-    "happy-dom": "^14.7.1",
+    "@preact/preset-vite": "2.9.0",
+    "@testing-library/preact": "3.2.4",
+    "@types/node": "22.5.3",
+    "@types/showdown": "2.0.6",
+    "@typescript-eslint/eslint-plugin": "7.6.0",
+    "@typescript-eslint/parser": "7.6.0",
+    "concurrently": "8.2.2",
+    "date-fns": "3.6.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-react": "7.35.2",
+    "happy-dom": "15.7.3",
     "netlify-cms-json-exporter": "0.1.2",
-    "nodemon": "^3.1.0",
-    "preact": "^10.20.2",
-    "puppeteer": "^22.6.4",
-    "sass": "^1.75.0",
-    "showdown": "~2.1.0",
-    "typescript": "~5.4.5",
-    "vite": "^5.2.8",
-    "vitest": "^1.5.0"
+    "nodemon": "3.1.4",
+    "preact": "10.23.2",
+    "puppeteer": "23.3.0",
+    "sass": "1.78.0",
+    "showdown": "2.1.0",
+    "typescript": "5.5.4",
+    "vite": "5.4.3",
+    "vitest": "2.0.5"
   }
 }
