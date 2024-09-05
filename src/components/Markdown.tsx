@@ -1,10 +1,10 @@
-import { h } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
-import showdown from 'showdown';
+import { h } from 'preact'
+import { useEffect, useState } from 'preact/hooks'
+import showdown from 'showdown'
 
 type Props = {
-    markdown: string;
-};
+  markdown: string
+}
 
 const converter = new showdown.Converter({
   simplifiedAutoLink: true,
@@ -13,23 +13,25 @@ const converter = new showdown.Converter({
   tables: true,
   tasklists: true,
   simpleLineBreaks: true,
-});
+})
 
-const convertMarkdownToHtml = (markdown: string): string => converter.makeHtml(markdown);
+const convertMarkdownToHtml = (markdown: string): string =>
+  converter.makeHtml(markdown)
 
 const Markdown = ({ markdown }: Props): h.JSX.Element => {
-  const sanitizedMarkdown = markdown.replace(/\\$/gm, '');
+  const sanitizedMarkdown = markdown.replace(/\\$/gm, '')
 
   const [html, setHtml] = useState(() =>
-    typeof window !== 'undefined' ? '' : convertMarkdownToHtml(sanitizedMarkdown)
-  );
+    typeof window !== 'undefined'
+      ? ''
+      : convertMarkdownToHtml(sanitizedMarkdown),
+  )
 
   useEffect(() => {
-    setHtml(convertMarkdownToHtml(sanitizedMarkdown));
-  }, [markdown]);
+    setHtml(convertMarkdownToHtml(sanitizedMarkdown))
+  }, [markdown])
 
-  // eslint-disable-next-line react/no-danger
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
-};
+  return <div dangerouslySetInnerHTML={{ __html: html }} />
+}
 
-export default Markdown;
+export default Markdown

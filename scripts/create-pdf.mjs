@@ -4,18 +4,18 @@ import path from 'path'
 import puppeteer from 'puppeteer'
 
 import url from 'url'
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 const outputPath = './src/static/cv-marco-montalbano.pdf'
 
 /**
  * Generate a PDF
  * @param {string} url Input url
- * @returns 
+ * @returns
  */
 async function generatePDF(url) {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--disable-web-security']
+    args: ['--disable-web-security'],
   })
 
   const page = await browser.newPage()
@@ -33,7 +33,7 @@ async function generatePDF(url) {
       right: '10mm',
       bottom: '15mm',
       left: '10mm',
-    }
+    },
   }
   await page.emulateMediaType('print')
   const pdf = await page.pdf(pdfConfig)

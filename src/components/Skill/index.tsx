@@ -1,22 +1,27 @@
-import { h, Fragment } from 'preact';
-import Section from '../Section';
-import Languages from './Languages';
-import Markdown from '../Markdown';
+import { Fragment, h } from 'preact'
+import { Skill } from '../../netlify-cms'
+import Markdown from '../Markdown'
+import Section from '../Section'
+import Languages from './Languages'
 
 type Props = {
-    skill: Skill;
-};
+  skill: Skill
+}
 
-const Skill = ({ skill }: Props): h.JSX.Element => (
+const Component = ({ skill }: Props): h.JSX.Element => (
   <Fragment>
     <Section sidebarHasTitle sidebar="Personal Skills" />
-    <Section sidebar="Native language">{skill.nativeLanguage.join(', ')}</Section>
+    <Section sidebar="Native language">
+      {skill.nativeLanguage.join(', ')}
+    </Section>
     <Languages languages={skill.languages} />
-    <Section sidebar="Driving licence">{skill.drivingLicense.join(', ')}</Section>
+    <Section sidebar="Driving licence">
+      {skill.drivingLicense.join(', ')}
+    </Section>
     <Section sidebar="Skills">
       <Markdown markdown={skill.skills} />
     </Section>
   </Fragment>
-);
+)
 
-export default Skill;
+export default Component

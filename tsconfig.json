@@ -17,6 +17,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "include": ["netlify-cms.d.ts", "scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"],
+  "include": ["scripts/*.ts", "src/**/*.tsx", "src/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

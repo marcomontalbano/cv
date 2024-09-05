@@ -1,9 +1,10 @@
-import { h, Fragment } from 'preact';
-import Section from '../Section';
+import { Fragment, h } from 'preact'
+import { Language } from '../../netlify-cms'
+import Section from '../Section'
 
 type Props = {
-    languages: Language[];
-};
+  languages: Language[]
+}
 
 const Languages = ({ languages }: Props): h.JSX.Element => (
   <Fragment>
@@ -20,14 +21,14 @@ const Languages = ({ languages }: Props): h.JSX.Element => (
             <td>Listening</td>
             <td>Reading</td>
             <td>
-                            Spoken
+              Spoken
               <br />
-                            interaction
+              interaction
             </td>
             <td>
-                            Spoken
+              Spoken
               <br />
-                            production
+              production
             </td>
             <td> </td>
           </tr>
@@ -47,6 +48,6 @@ const Languages = ({ languages }: Props): h.JSX.Element => (
       </table>
     </Section>
   </Fragment>
-);
+)
 
-export default Languages;
+export default Languages

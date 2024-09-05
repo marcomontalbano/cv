@@ -6,8 +6,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": "vitest",
+    "lint": "npx @biomejs/biome check --write",
+    "test": "vitest run",
     "prerender": "node ./scripts/prerender.mjs",
     "prebuild": "npm run prerender",
     "build": "tsc && vite build",
@@ -32,24 +32,17 @@
     "url": "https://github.com/marcomontalbano/cv/issues"
   },
   "homepage": "https://github.com/marcomontalbano/cv#readme",
-  "eslintIgnore": [
-    "coverage/*",
-    "dist/*"
-  ],
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@preact/preset-vite": "2.9.0",
     "@testing-library/preact": "3.2.4",
     "@types/node": "22.5.3",
     "@types/showdown": "2.0.6",
-    "@typescript-eslint/eslint-plugin": "7.6.0",
-    "@typescript-eslint/parser": "7.6.0",
     "concurrently": "8.2.2",
     "date-fns": "3.6.0",
-    "eslint": "8.57.0",
-    "eslint-plugin-react": "7.35.2",
     "happy-dom": "15.7.3",
     "netlify-cms-json-exporter": "0.1.2",
     "nodemon": "3.1.4",
