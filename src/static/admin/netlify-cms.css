@@ -1,90 +1,90 @@
 @media (max-width: 799px) {
-    [class*='-SidebarContainer-card'] {
-        position: static;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    [class*='-AppMainContainer'],
-    [class*='-AppHeaderContent'] {
-        min-width: 0;
-    }
-    [class*='-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton'],
-    [class*='-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton'] {
-        margin: 0;
-        padding: 16px 7px;
-    }
-    [class*='-CollectionMain'] {
-        padding-left: 0;
-    }
-    [class*='-CollectionTopContainer-card-cardTop'] {
-        width: 100%;
-    }
-    [class*='-ToolbarSectionMain-toolbarSection'] {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+  [class*="-SidebarContainer-card"] {
+    position: static;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  [class*="-AppMainContainer"],
+  [class*="-AppHeaderContent"] {
+    min-width: 0;
+  }
+  [class*="-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton"],
+  [class*="-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton"] {
+    margin: 0;
+    padding: 16px 7px;
+  }
+  [class*="-CollectionMain"] {
+    padding-left: 0;
+  }
+  [class*="-CollectionTopContainer-card-cardTop"] {
+    width: 100%;
+  }
+  [class*="-ToolbarSectionMain-toolbarSection"] {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-    /* Media */
-    [class*='-StyledModal'] {
-        padding: 15px;
-        grid-template-rows: 190px auto;
-    }
-    [class*='-SearchContainer'] {
-        display: block;
-        width: 100%;
-    }
-    [class*='-LibraryTop'] {
-        flex-direction: column;
-    }
-    [class*='-ActionsContainer'] {
-        text-align: center;
-    }
-    [class*='-LibraryTitle'] {
-        margin-bottom: 15px;
-    }
-    [class*='-UpperActionsContainer'] {
-        display: inline-block;
-    }
-    [class*='-DownloadButton-button-default-disabled-button'] {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    [class*='-StyledUploadButton-button-default-disabled-button-gray'] {
-        margin-left: 10px;
-    }
-    [class*='-DeleteButton-button-default-disabled-button-lightRed'] {
-        margin-top: 10px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    [class*='-InsertButton-button-default-disabled-button-green'] {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    [class*='-LowerActionsContainer'] {
-        display: inline-block;
-        margin-top: 0;
-    }
-    [class*='-CardGridContainer '] {
-        position: static;
-        overflow: visible;
-        width: 100%;
-        padding-top: 20px;
-    }
-    /* End Media */
+  /* Media */
+  [class*="-StyledModal"] {
+    padding: 15px;
+    grid-template-rows: 190px auto;
+  }
+  [class*="-SearchContainer"] {
+    display: block;
+    width: 100%;
+  }
+  [class*="-LibraryTop"] {
+    flex-direction: column;
+  }
+  [class*="-ActionsContainer"] {
+    text-align: center;
+  }
+  [class*="-LibraryTitle"] {
+    margin-bottom: 15px;
+  }
+  [class*="-UpperActionsContainer"] {
+    display: inline-block;
+  }
+  [class*="-DownloadButton-button-default-disabled-button"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  [class*="-StyledUploadButton-button-default-disabled-button-gray"] {
+    margin-left: 10px;
+  }
+  [class*="-DeleteButton-button-default-disabled-button-lightRed"] {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  [class*="-InsertButton-button-default-disabled-button-green"] {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  [class*="-LowerActionsContainer"] {
+    display: inline-block;
+    margin-top: 0;
+  }
+  [class*="-CardGridContainer "] {
+    position: static;
+    overflow: visible;
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* End Media */
 
-    /* Blog */
-    [class*='-EditorContainer'] {
-        min-width: 0;
-        padding-top: 100px;
-    }
-    [class*='-ToolbarContainer'] {
-        height: 100px;
-        width: 100%;
-        min-width: 0;
-    }
-    [class*='-ToolbarToggle'] {
-        flex-direction: column;
-    }
-    /* End Blog */
+  /* Blog */
+  [class*="-EditorContainer"] {
+    min-width: 0;
+    padding-top: 100px;
+  }
+  [class*="-ToolbarContainer"] {
+    height: 100px;
+    width: 100%;
+    min-width: 0;
+  }
+  [class*="-ToolbarToggle"] {
+    flex-direction: column;
+  }
+  /* End Blog */
 }

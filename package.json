@@ -16,7 +16,7 @@
     "predev:front": "npm run prerender",
     "dev:prerender": "nodemon --watch ./content --exec 'npm run prerender'",
     "dev:front": "vite --port 8080",
-    "dev:admin": "concurrently -n cms,web \"npx decap-server\" \"npx http-server -p 3000 src/static\"",
+    "dev:admin": "concurrently -n cms,web \"npx decap-server\" \"npx http-server -p 8081 src/static\"",
     "dev": "concurrently -c 'bgYellow.bold,bgBlue.bold,bgGreen.bold' npm:dev:*",
     "prebuild:cv": "npm run build",
     "build:cv": "node ./scripts/create-pdf.mjs",
@@ -39,22 +39,22 @@
     "npm": ">=10"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.3",
-    "@preact/preset-vite": "2.9.1",
+    "@biomejs/biome": "1.9.4",
+    "@preact/preset-vite": "2.10.1",
     "@testing-library/preact": "3.2.4",
-    "@types/node": "22.7.5",
+    "@types/node": "22.13.10",
     "@types/showdown": "2.0.6",
-    "concurrently": "9.0.1",
+    "concurrently": "9.1.2",
     "date-fns": "4.1.0",
-    "happy-dom": "15.7.4",
+    "happy-dom": "17.4.4",
     "netlify-cms-json-exporter": "0.1.2",
-    "nodemon": "3.1.7",
-    "preact": "10.24.2",
-    "puppeteer": "23.5.1",
-    "sass": "1.79.4",
+    "nodemon": "3.1.9",
+    "preact": "10.26.4",
+    "puppeteer": "24.4.0",
+    "sass": "1.86.0",
     "showdown": "2.1.0",
-    "typescript": "5.6.2",
-    "vite": "5.4.8",
-    "vitest": "2.1.2"
+    "typescript": "5.8.2",
+    "vite": "6.2.2",
+    "vitest": "3.0.9"
   }
 }

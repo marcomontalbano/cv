@@ -1,4 +1,4 @@
-# https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
+# https://decapcms.org/docs/working-with-a-local-git-repository
 local_backend: true
 
 backend:
