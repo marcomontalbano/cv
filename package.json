@@ -42,19 +42,19 @@
     "@biomejs/biome": "1.9.4",
     "@preact/preset-vite": "2.10.1",
     "@testing-library/preact": "3.2.4",
-    "@types/node": "22.13.10",
+    "@types/node": "22.15.30",
     "@types/showdown": "2.0.6",
     "concurrently": "9.1.2",
     "date-fns": "4.1.0",
-    "happy-dom": "17.4.4",
+    "happy-dom": "17.6.3",
     "netlify-cms-json-exporter": "0.1.2",
-    "nodemon": "3.1.9",
-    "preact": "10.26.4",
-    "puppeteer": "24.4.0",
-    "sass": "1.86.0",
+    "nodemon": "3.1.10",
+    "preact": "10.26.8",
+    "puppeteer": "24.10.0",
+    "sass": "1.89.2",
     "showdown": "2.1.0",
-    "typescript": "5.8.2",
-    "vite": "6.2.2",
-    "vitest": "3.0.9"
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vitest": "3.2.3"
   }
 }
