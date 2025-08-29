@@ -4,6 +4,7 @@ import path from 'path'
 import puppeteer from 'puppeteer'
 
 import url from 'url'
+
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 const outputPath = './src/static/cv-marco-montalbano.pdf'
 

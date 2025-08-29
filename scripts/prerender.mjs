@@ -1,8 +1,8 @@
 // @ts-check
 
 import { writeFileSync } from 'fs'
-import path from 'path'
 import { getContent } from 'netlify-cms-json-exporter'
+import path from 'path'
 
 const configPath = path.resolve('src', 'static', 'admin', 'config.yml')
 const contentPath = path.resolve('content')

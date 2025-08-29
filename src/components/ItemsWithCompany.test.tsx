@@ -1,8 +1,7 @@
 import { render } from '@testing-library/preact'
 import { describe, expect, it } from 'vitest'
-import ItemsWithCompany from './ItemsWithCompany'
-
 import experiences from './__mocks__/experiences'
+import ItemsWithCompany from './ItemsWithCompany'
 
 describe('ItemsWithCompany', () => {
   it('should render a list of items', () => {
