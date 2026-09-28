@@ -1,4 +1,4 @@
-import { render } from '@comark/html'
+import { renderHtml } from '@comark/html'
 import { h } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 
@@ -7,7 +7,7 @@ type Props = {
 }
 
 const convertMarkdownToHtml = async (markdown: string): Promise<string> =>
-  render(markdown)
+  renderHtml(markdown)
 
 const Markdown = ({ markdown }: Props): h.JSX.Element => {
   const [html, setHtml] = useState<string>('')
