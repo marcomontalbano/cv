@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/marcomontalbano/cv#readme",
   "engines": {
-    "node": ">=20",
-    "npm": ">=10"
+    "node": ">=26",
+    "npm": ">=11"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
